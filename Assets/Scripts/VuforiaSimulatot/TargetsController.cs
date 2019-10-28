@@ -1,14 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TargetsController : MonoBehaviour
 {
+    public TestTrackableBehaviour[] testTargetsBehaviours;
     [SerializeField] private float offSet;
     private Camera _mainCamera;
+
+    private void Awake()
+    {
+        testTargetsBehaviours =
+            (TestTrackableBehaviour[]) UnityEngine.Object.FindObjectsOfType(typeof(TestTrackableBehaviour));
+    }
+
     private void Start()
     {
         _mainCamera = Camera.main;
+        
     }
 
     public void OnMarkerFound(TestTrackableBehaviour trackableBehaviour)
@@ -33,7 +43,7 @@ public class TargetsController : MonoBehaviour
     }
     private void UpdateTrackablesEditor(string newTrackableName)
     {
-        foreach (TestTrackableBehaviour trackableBehaviour in (TestTrackableBehaviour[]) UnityEngine.Object.FindObjectsOfType(typeof (TestTrackableBehaviour)))
+        foreach (TestTrackableBehaviour trackableBehaviour in testTargetsBehaviours)
         {
             if (trackableBehaviour.TrackableName != newTrackableName)
                 trackableBehaviour.OnTrackerUpdate(TestTrackableBehaviour.Status.NO_POSE);
