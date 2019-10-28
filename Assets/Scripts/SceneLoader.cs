@@ -49,17 +49,17 @@ public class SceneLoader : MonoBehaviour
             yield return null;
         }
         
-        MoveGameObjectsToScene();
+        //MoveGameObjectsToScene();
 
         SceneManager.UnloadSceneAsync(currentScene);
         
     }
 
-    private void MoveGameObjectsToScene()
+    private void MoveGameObjectsToScene(Scene sceneToMove)
     {
         foreach (var item in FindObjectOfType<TargetsController>().testTargetsBehaviours)
         {
-           
+             SceneManager.MoveGameObjectToScene(item.gameObject, sceneToMove);
         }
 
         
