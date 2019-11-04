@@ -765,7 +765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &534669903
 AudioListener:
   m_ObjectHideFlags: 0
@@ -859,6 +859,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f651e01f618444efa2a245a7e488a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testTargets:
+  - {fileID: 243495433}
+  - {fileID: 1158126004}
+  - {fileID: 841948911}
+  - {fileID: 1653904864}
+  - {fileID: 1351145599}
+  - {fileID: 1118390090}
+  - {fileID: 2037537373}
   offSet: 3
 --- !u!4 &560126176
 Transform:
