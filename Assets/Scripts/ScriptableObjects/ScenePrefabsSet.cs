@@ -6,5 +6,5 @@ using Vuforia;
 public class ScenePrefabsSet : ScriptableObject
 {
     [SerializeField]
-    public List<GameObject> targets;
+    public GameObject[] targets;
 }

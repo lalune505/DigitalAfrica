@@ -1,18 +1,23 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Vuforia;
 
 public class SceneLoader : MonoBehaviour
 {
-    public ScenePrefabsSet scenePrefabsSetAnimals;
+    public ScenePrefabsSet animalsScenePrefabsSet;
+    public ScenePrefabsSet masksScenePrefabsSet;
+
+    private List<TrackableBehaviour> _trackableBehaviours;
+    
     public static SceneLoader instance;
     private AsyncOperation _asyncOperation;
 
     private const string AnimalsARScenePath = "Assets/Scenes/AnimalsARScene.unity";
-    private const string MasksARScenePath = "";
+    private const string MasksARScenePath = "Assets/Scenes/MasksARScene.unity";
     
 
     private void Awake()
@@ -32,19 +37,19 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadAnimalsScene()
     {
-        StartCoroutine(LoadAsyncScene(AnimalsARScenePath));
+        StartCoroutine(LoadAsyncScene(AnimalsARScenePath, animalsScenePrefabsSet));
     }
 
     public void LoadMasksScene()
     {
-        StartCoroutine(LoadAsyncScene(MasksARScenePath));
+        StartCoroutine(LoadAsyncScene(MasksARScenePath, masksScenePrefabsSet));
     }
 
-    private IEnumerator LoadAsyncScene(string scenePath)
+    private IEnumerator LoadAsyncScene(string scenePath, ScenePrefabsSet scenePrefabsSet)
     {
         yield return null;
 
-        _asyncOperation = SceneManager.LoadSceneAsync(scenePath, LoadSceneMode.Additive);
+        _asyncOperation = SceneManager.LoadSceneAsync(scenePath, LoadSceneMode.Single);
 
         VuforiaRuntime.Instance.InitVuforia();
 
@@ -58,6 +63,13 @@ public class SceneLoader : MonoBehaviour
             }
 
             yield return null;
+        }
+
+        _trackableBehaviours = FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go=>go.name).ToList();
+        
+        for (int i = 0; i < scenePrefabsSet.targets.Length; i++)
+        {
+            Instantiate(scenePrefabsSet.targets[i], _trackableBehaviours[i].gameObject.transform, true);
         }
 
     }

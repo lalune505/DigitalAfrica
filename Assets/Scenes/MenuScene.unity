@@ -935,7 +935,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d1a7507bdf44a63b3d651f954a1d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageTargetsSet: {fileID: 11400000, guid: e16318ee417ce4b43803e51007f3ebc6, type: 2}
+  animalsScenePrefabsSet: {fileID: 11400000, guid: e16318ee417ce4b43803e51007f3ebc6,
+    type: 2}
+  masksScenePrefabsSet: {fileID: 11400000, guid: 936ddb43674a4451893a87637206d2fc,
+    type: 2}
 --- !u!4 &1947420376
 Transform:
   m_ObjectHideFlags: 0
