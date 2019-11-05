@@ -1,6 +1,5 @@
 
 using UnityEngine;
-using Vuforia;
 
 public class TestTrackableEventHandler : MonoBehaviour, ITestTrackableEventHandler
 {
@@ -21,7 +20,7 @@ public class TestTrackableEventHandler : MonoBehaviour, ITestTrackableEventHandl
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
     }
 
-    protected virtual void OnDestroy()
+   protected virtual void OnDestroy()
     {
         if (mTrackableBehaviour)
             mTrackableBehaviour.UnregisterTrackableEventHandler(this);

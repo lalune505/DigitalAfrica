@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfdb137301646494db50d9d991f5d5ce, type: 3}
+  m_Name: Animals
+  m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 4203302582702545174, guid: 8a98c8bb2a6af4ba5ae0f8f8ba901d9f, type: 3}
+  - {fileID: 9191181658021792730, guid: 1cb6f046a57b34a07b712965c216802b, type: 3}
+  - {fileID: 7417459934783047900, guid: 84203a78807b34384a59fcfafec1f671, type: 3}
+  - {fileID: 4550761958742799505, guid: 11d2823e527c84f7ba51651de8e9e380, type: 3}
+  - {fileID: 820611204551166279, guid: d74092da05b944b76a1f0b0a6aaae6d3, type: 3}
+  - {fileID: 5068151234891456284, guid: fa2295061a7da4b6ea52e4a014264c9e, type: 3}
+  - {fileID: 8850718384981837017, guid: 96c13c7eb53e24ac383ee85b73ca7ff6, type: 3}
