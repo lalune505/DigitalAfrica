@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenuScene.unity
+    path: Assets/Scenes/Main/MenuScene.unity
     guid: 085a4f181e7364be485c8faaf6706094
   - enabled: 1
-    path: Assets/Scenes/AnimalsARScene.unity
+    path: Assets/Scenes/Main/AnimalsARScene.unity
     guid: 1922135ec4dde49d38bd1645886c6bab
   - enabled: 1
-    path: Assets/Scenes/MasksARScene.unity
+    path: Assets/Scenes/Main/MasksARScene.unity
     guid: 29e56712b3c1c458e82945e19d889963
   m_configObjects: {}
