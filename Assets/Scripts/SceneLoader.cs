@@ -18,6 +18,7 @@ public class SceneLoader : MonoBehaviour
 
     private const string AnimalsARScenePath = "Assets/Scenes/AnimalsARScene.unity";
     private const string MasksARScenePath = "Assets/Scenes/MasksARScene.unity";
+    private const string MenuScenePath = "Assets/Scenes/MenuScene.unity";
     
 
     private void Awake()
@@ -37,15 +38,20 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadAnimalsScene()
     {
-        StartCoroutine(LoadAsyncScene(AnimalsARScenePath, animalsScenePrefabsSet));
+        StartCoroutine(LoadAsyncARScene(AnimalsARScenePath, animalsScenePrefabsSet));
     }
 
     public void LoadMasksScene()
     {
-        StartCoroutine(LoadAsyncScene(MasksARScenePath, masksScenePrefabsSet));
+        StartCoroutine(LoadAsyncARScene(MasksARScenePath, masksScenePrefabsSet));
     }
 
-    private IEnumerator LoadAsyncScene(string scenePath, ScenePrefabsSet scenePrefabsSet)
+    public void LoadMenuScene()
+    {
+        StartCoroutine(LoadAsyncScene(MenuScenePath));
+    }
+
+    private IEnumerator LoadAsyncARScene(string scenePath, ScenePrefabsSet scenePrefabsSet)
     {
         yield return null;
 
@@ -65,12 +71,47 @@ public class SceneLoader : MonoBehaviour
             yield return null;
         }
 
+        InstantiatePrefabsOnTrackables(scenePrefabsSet);
+    }
+
+    private void InstantiatePrefabsOnTrackables(ScenePrefabsSet set)
+    {
         _trackableBehaviours = FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go=>go.name).ToList();
         
-        for (int i = 0; i < scenePrefabsSet.targets.Length; i++)
+        for (int i = 0; i < set.targets.Length; i++)
         {
-            Instantiate(scenePrefabsSet.targets[i], _trackableBehaviours[i].gameObject.transform, true);
+            Transform trackableBehaviourTransform;
+            
+            if (_trackableBehaviours.Count == 1)
+            {
+                trackableBehaviourTransform = _trackableBehaviours[0].gameObject.transform;
+            }
+            else
+            {
+                trackableBehaviourTransform = _trackableBehaviours[i].gameObject.transform;
+            }
+            
+            Instantiate(set.targets[i], trackableBehaviourTransform, true);
         }
-
     }
+
+    private IEnumerator LoadAsyncScene(string scenePath)
+    {
+        yield return null;
+        
+        _asyncOperation = SceneManager.LoadSceneAsync(scenePath, LoadSceneMode.Single);
+        
+        _asyncOperation.allowSceneActivation = false;
+
+        while (!_asyncOperation.isDone)
+        {
+            if (_asyncOperation.progress >= 0.9f)
+            {
+                _asyncOperation.allowSceneActivation = true;
+            }
+            
+            yield return null;
+        }
+    }
+   
 }
