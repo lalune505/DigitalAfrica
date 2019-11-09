@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 820611204551166276}
+  - component: {fileID: 3046391956519626369}
   m_Layer: 0
   m_Name: AnimalImageTarget5
   m_TagString: Untagged
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3046391956519626369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820611204551166279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ae6fd612d8b146d78512804c2c181dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\u041B\u0435\u0432"
 --- !u!1001 &1152774772556279235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40,10 +54,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 820611204551166276}
     m_Modifications:
-    - target: {fileID: 1230038737752134, guid: f38de6ca0b6eba841af8b271c5e7da43, type: 3}
-      propertyPath: m_Name
-      value: lion_sv_rm_SLP_Dark
-      objectReference: {fileID: 0}
     - target: {fileID: 4268495023119510, guid: f38de6ca0b6eba841af8b271c5e7da43, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.298
@@ -87,6 +97,10 @@ PrefabInstance:
     - target: {fileID: 4268495023119510, guid: f38de6ca0b6eba841af8b271c5e7da43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230038737752134, guid: f38de6ca0b6eba841af8b271c5e7da43, type: 3}
+      propertyPath: m_Name
+      value: lion_sv_rm_SLP_Dark
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f38de6ca0b6eba841af8b271c5e7da43, type: 3}

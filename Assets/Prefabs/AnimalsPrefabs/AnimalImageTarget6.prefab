@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5068151234891456285}
+  - component: {fileID: 8635777752754294272}
   m_Layer: 0
   m_Name: AnimalImageTarget6
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8635777752754294272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5068151234891456284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ae6fd612d8b146d78512804c2c181dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\u0421\u0430\u0432\u0430\u043D\u043D\u044B\u0439 \u0441\u043B\u043E\u043D"
 --- !u!1001 &4421239161394336365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39,10 +53,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5068151234891456285}
     m_Modifications:
-    - target: {fileID: 1550713587478342, guid: a609b061891750745895cf6734fd1b09, type: 3}
-      propertyPath: m_Name
-      value: Baby_Elephant_FV_RM_MX_SLP
-      objectReference: {fileID: 0}
     - target: {fileID: 4096774256608442, guid: a609b061891750745895cf6734fd1b09, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.786
@@ -86,6 +96,10 @@ PrefabInstance:
     - target: {fileID: 4096774256608442, guid: a609b061891750745895cf6734fd1b09, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550713587478342, guid: a609b061891750745895cf6734fd1b09, type: 3}
+      propertyPath: m_Name
+      value: Baby_Elephant_FV_RM_MX_SLP
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a609b061891750745895cf6734fd1b09, type: 3}

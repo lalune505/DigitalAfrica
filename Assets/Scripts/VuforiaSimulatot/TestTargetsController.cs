@@ -17,6 +17,7 @@ public class TestTargetsController : MonoBehaviour
     private const string AnimalsScenePath = "Assets/Scenes/AnimalsScene.unity";
 
     private CanvasController _canvasController;
+    private TargetPrefabsContainer targetPrefabsContainer;
 
     private void Start()
     {
@@ -58,7 +59,12 @@ public class TestTargetsController : MonoBehaviour
         {
             _canvasController.ActivatePrefabSwitcherButtons(true);
         }
-        
+
+        if (targetPrefabsContainer != null)
+        {
+            TargetContentManager.ActivateTargetPrefab();
+        }
+
     }
 
     public void HideAllMarkers()
@@ -72,6 +78,7 @@ public class TestTargetsController : MonoBehaviour
         {
             _canvasController.ActivatePrefabSwitcherButtons(false);
         }
+        TargetContentManager.UpdateNameTextField("");
     }
     private void UpdateTrackablesEditor(string newTrackableName)
     {
@@ -90,12 +97,13 @@ public class TestTargetsController : MonoBehaviour
             var go = Instantiate(set.targets[i], trackableBehaviour.gameObject.transform, true);
             targetPrefabs.Add(go);
         }
-
-        TargetPrefabsContainer targetPrefabsContainer = trackableBehaviour.GetComponent<TargetPrefabsContainer>();
+        
+        targetPrefabsContainer = trackableBehaviour.GetComponent<TargetPrefabsContainer>();
         
         targetPrefabsContainer.SetTarget(targetPrefabs, 0);
         
-        TargetContentManager.SetCurrentTarget(targetPrefabsContainer.GetTarget(), targetPrefabsContainer.GetTransitionPrefab());
+        TargetContentManager.SetCurrentTarget(targetPrefabsContainer.GetTarget(),
+            targetPrefabsContainer.GetTransitionPrefab());
 
     }
     
