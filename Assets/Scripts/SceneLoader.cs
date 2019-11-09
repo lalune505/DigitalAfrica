@@ -110,9 +110,12 @@ public class SceneLoader : MonoBehaviour
             var go = Instantiate(set.targets[i], trackableBehaviour.gameObject.transform, true);
             targetPrefabs.Add(go);
         }
-        trackableBehaviour.GetComponent<TargetPrefabsContainer>().SetTarget(targetPrefabs, 0);
+       
+        TargetPrefabsContainer targetPrefabsContainer = trackableBehaviour.GetComponent<TargetPrefabsContainer>();
         
+        targetPrefabsContainer.SetTarget(targetPrefabs, 0);
         
+        TargetContentManager.SetCurrentTarget(targetPrefabsContainer.GetTarget(), targetPrefabsContainer.GetTransitionPrefab());
     }
     
     private void InstantiatePrefabsOnTrackables(List<TrackableBehaviour> trackableBehaviours, ScenePrefabsSet set)

@@ -17,7 +17,7 @@ public class TargetContentManager : MonoBehaviour
         nameTextField = textGo.GetComponent<Text>();
     }
 
-    public static void SetCurrentTarget(Target target)
+    public static void SetCurrentTarget(Target target, GameObject go)
     {
         _currentTarget = target;
         
@@ -26,8 +26,10 @@ public class TargetContentManager : MonoBehaviour
         _currentTarget.GetCurrentTargetPrefab().SetActive(true);
 
         _isHiding = false;
+        
+        SetTransitionGO(go);
     }
-    public static void SetTransitionGO(GameObject go)
+    private static void SetTransitionGO(GameObject go)
     {
         _transitionGO = go;
     }

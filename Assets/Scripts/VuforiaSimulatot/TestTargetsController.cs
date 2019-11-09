@@ -16,11 +16,15 @@ public class TestTargetsController : MonoBehaviour
     private const string MaskScenePath = "Assets/Scenes/MasksScene.unity";
     private const string AnimalsScenePath = "Assets/Scenes/AnimalsScene.unity";
 
+    private CanvasController _canvasController;
+
     private void Start()
     {
         _mainCamera = Camera.main;
         
         _currentScene = SceneManager.GetActiveScene();
+
+        _canvasController = FindObjectOfType<CanvasController>();
 
         if (_currentScene.path.Equals(MaskScenePath))
         {
@@ -32,6 +36,10 @@ public class TestTargetsController : MonoBehaviour
             InstantiatePrefabsSetOnTrackable(testTargets[0], scenePrefabsSet);
         }
         
+        if (_canvasController != null)
+        {
+            _canvasController.ActivatePrefabSwitcherButtons(false);
+        }
     }
 
     public void OnMarkerFound(TestTrackableBehaviour trackableBehaviour)
@@ -45,6 +53,12 @@ public class TestTargetsController : MonoBehaviour
         _mainCamera.transform.position = trackableGo.transform.position + offSet * trackableGo.transform.up;
         
         _mainCamera.transform.eulerAngles = new Vector3(0, trackableGo.transform.eulerAngles.y, 0);
+        
+        if (_canvasController != null)
+        {
+            _canvasController.ActivatePrefabSwitcherButtons(true);
+        }
+        
     }
 
     public void HideAllMarkers()
@@ -52,6 +66,11 @@ public class TestTargetsController : MonoBehaviour
         foreach (TestTrackableBehaviour trackableBehaviour in testTargets)
         {
             trackableBehaviour.OnTrackerUpdate(TestTrackableBehaviour.Status.NO_POSE);
+        }
+
+        if (_canvasController != null)
+        {
+            _canvasController.ActivatePrefabSwitcherButtons(false);
         }
     }
     private void UpdateTrackablesEditor(string newTrackableName)
@@ -71,9 +90,13 @@ public class TestTargetsController : MonoBehaviour
             var go = Instantiate(set.targets[i], trackableBehaviour.gameObject.transform, true);
             targetPrefabs.Add(go);
         }
-        trackableBehaviour.GetComponent<TargetPrefabsContainer>().SetTarget(targetPrefabs, 0);
+
+        TargetPrefabsContainer targetPrefabsContainer = trackableBehaviour.GetComponent<TargetPrefabsContainer>();
         
-        TargetContentManager.SetCurrentTarget(trackableBehaviour.GetComponent<TargetPrefabsContainer>().GetTarget());
+        targetPrefabsContainer.SetTarget(targetPrefabs, 0);
+        
+        TargetContentManager.SetCurrentTarget(targetPrefabsContainer.GetTarget(), targetPrefabsContainer.GetTransitionPrefab());
+
     }
     
     private void InstantiatePrefabsOnTrackables(List<TestTrackableBehaviour> trackableBehaviours, ScenePrefabsSet set)
