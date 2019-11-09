@@ -122,7 +122,7 @@ public class SceneLoader : MonoBehaviour
     {
         for (int i = 0; i < set.targets.Length; i++)
         {
-           var go = Instantiate(set.targets[i], trackableBehaviours[i].gameObject.transform, true);
+           Instantiate(set.targets[i], trackableBehaviours[i].gameObject.transform, true);
         }
         
     }

@@ -15,6 +15,7 @@ public class TargetContentManager : MonoBehaviour
     void Awake()
     {
         nameTextField = textGo.GetComponent<Text>();
+        UpdateNameTextField("");
     }
 
     public static void SetCurrentTarget(Target target, GameObject go)
@@ -22,12 +23,17 @@ public class TargetContentManager : MonoBehaviour
         _currentTarget = target;
         
         _currentTarget.HideAllPrefabs();
-        
+
+        SetTransitionGO(go);
+    }
+
+    public static void ActivateTargetPrefab()
+    {
         _currentTarget.GetCurrentTargetPrefab().SetActive(true);
 
+        UpdateNameTextField(_currentTarget.GetCurrentTargetPrefab().GetComponent<AnimalName>().GetAnimalName());
+
         _isHiding = false;
-        
-        SetTransitionGO(go);
     }
     private static void SetTransitionGO(GameObject go)
     {
@@ -79,6 +85,8 @@ public class TargetContentManager : MonoBehaviour
         }
         
         _currentTarget.GetCurrentTargetPrefab().SetActive(true);
+        
+        UpdateNameTextField(_currentTarget.GetCurrentTargetPrefab().GetComponent<AnimalName>().GetAnimalName());
     }
 
     public static void UpdateNameTextField(string text)

@@ -5,9 +5,11 @@ using Vuforia;
 public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
 {
     private CanvasController _canvasController;
+    private TargetPrefabsContainer _targetPrefabsContainer;
     private void Awake()
     {
         _canvasController = FindObjectOfType<CanvasController>();
+        _targetPrefabsContainer = GetComponent<TargetPrefabsContainer>();
     }
 
     #region PROTECTED_METHODS
@@ -16,12 +18,16 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
     {
         base.OnTrackingFound();
         _canvasController.ActivatePrefabSwitcherButtons(true);
+        
+        TargetContentManager.ActivateTargetPrefab();
        
     }
     protected override void OnTrackingLost()
     {
         base.OnTrackingLost();
         _canvasController.ActivatePrefabSwitcherButtons(false);
+        
+        TargetContentManager.UpdateNameTextField("");
     }
 
     #endregion // PROTECTED_METHODS
