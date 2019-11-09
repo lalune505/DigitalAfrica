@@ -70,30 +70,18 @@ public class SceneLoader : MonoBehaviour
 
             yield return null;
         }
-
-        InstantiatePrefabsOnTrackables(scenePrefabsSet);
-    }
-
-    private void InstantiatePrefabsOnTrackables(ScenePrefabsSet set)
-    {
-        _trackableBehaviours = FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go=>go.name).ToList();
         
-        for (int i = 0; i < set.targets.Length; i++)
+        if (scenePath.Equals(MasksARScenePath))
         {
-            Transform trackableBehaviourTransform;
-            
-            if (_trackableBehaviours.Count == 1)
-            {
-                trackableBehaviourTransform = _trackableBehaviours[0].gameObject.transform;
-            }
-            else
-            {
-                trackableBehaviourTransform = _trackableBehaviours[i].gameObject.transform;
-            }
-            
-            Instantiate(set.targets[i], trackableBehaviourTransform, true);
+           InstantiatePrefabsOnTrackables(FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go =>
+               go.name).ToList(),scenePrefabsSet);
+        }
+        else if (scenePath.Equals(AnimalsARScenePath))
+        {
+            InstantiatePrefabsSetOnTrackable(FindObjectOfType<TrackableBehaviour>(), scenePrefabsSet);
         }
     }
+    
 
     private IEnumerator LoadAsyncScene(string scenePath)
     {
@@ -113,5 +101,25 @@ public class SceneLoader : MonoBehaviour
             yield return null;
         }
     }
-   
+
+    private void InstantiatePrefabsSetOnTrackable(TrackableBehaviour trackableBehaviour, ScenePrefabsSet set)
+    {
+        List<GameObject> targetPrefabs = new List<GameObject>();
+        for (int i = 0; i < set.targets.Length; i++)
+        {
+            var go = Instantiate(set.targets[i], trackableBehaviour.gameObject.transform, true);
+            targetPrefabs.Add(go);
+        }
+        trackableBehaviour.GetComponent<TargetPrefabsContainer>().SetTarget(targetPrefabs, 0);
+    }
+    
+    private void InstantiatePrefabsOnTrackables(List<TrackableBehaviour> trackableBehaviours, ScenePrefabsSet set)
+    {
+        for (int i = 0; i < set.targets.Length; i++)
+        {
+           var go = Instantiate(set.targets[i], trackableBehaviours[i].gameObject.transform, true);
+        }
+        
+    }
+
 }
