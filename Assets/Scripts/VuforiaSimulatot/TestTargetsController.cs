@@ -72,6 +72,8 @@ public class TestTargetsController : MonoBehaviour
             targetPrefabs.Add(go);
         }
         trackableBehaviour.GetComponent<TargetPrefabsContainer>().SetTarget(targetPrefabs, 0);
+        
+        TargetContentManager.SetCurrentTarget(trackableBehaviour.GetComponent<TargetPrefabsContainer>().GetTarget());
     }
     
     private void InstantiatePrefabsOnTrackables(List<TestTrackableBehaviour> trackableBehaviours, ScenePrefabsSet set)

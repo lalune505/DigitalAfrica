@@ -111,6 +111,8 @@ public class SceneLoader : MonoBehaviour
             targetPrefabs.Add(go);
         }
         trackableBehaviour.GetComponent<TargetPrefabsContainer>().SetTarget(targetPrefabs, 0);
+        
+        
     }
     
     private void InstantiatePrefabsOnTrackables(List<TrackableBehaviour> trackableBehaviours, ScenePrefabsSet set)
