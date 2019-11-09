@@ -18,6 +18,7 @@ public class SceneLoader : MonoBehaviour
 
     private const string AnimalsARScenePath = "Assets/Scenes/AnimalsARScene.unity";
     private const string MasksARScenePath = "Assets/Scenes/MasksARScene.unity";
+    private const string MenuScenePath = "Assets/Scenes/MenuScene.unity";
     
 
     private void Awake()
@@ -37,15 +38,20 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadAnimalsScene()
     {
-        StartCoroutine(LoadAsyncScene(AnimalsARScenePath, animalsScenePrefabsSet));
+        StartCoroutine(LoadAsyncARScene(AnimalsARScenePath, animalsScenePrefabsSet));
     }
 
     public void LoadMasksScene()
     {
-        StartCoroutine(LoadAsyncScene(MasksARScenePath, masksScenePrefabsSet));
+        StartCoroutine(LoadAsyncARScene(MasksARScenePath, masksScenePrefabsSet));
     }
 
-    private IEnumerator LoadAsyncScene(string scenePath, ScenePrefabsSet scenePrefabsSet)
+    public void LoadMenuScene()
+    {
+        StartCoroutine(LoadAsyncScene(MenuScenePath));
+    }
+
+    private IEnumerator LoadAsyncARScene(string scenePath, ScenePrefabsSet scenePrefabsSet)
     {
         yield return null;
 
@@ -64,13 +70,61 @@ public class SceneLoader : MonoBehaviour
 
             yield return null;
         }
-
-        _trackableBehaviours = FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go=>go.name).ToList();
         
-        for (int i = 0; i < scenePrefabsSet.targets.Length; i++)
+        if (scenePath.Equals(MasksARScenePath))
         {
-            Instantiate(scenePrefabsSet.targets[i], _trackableBehaviours[i].gameObject.transform, true);
+           InstantiatePrefabsOnTrackables(FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go =>
+               go.name).ToList(),scenePrefabsSet);
         }
-
+        else if (scenePath.Equals(AnimalsARScenePath))
+        {
+            InstantiatePrefabsSetOnTrackable(FindObjectOfType<TrackableBehaviour>(), scenePrefabsSet);
+        }
     }
+    
+
+    private IEnumerator LoadAsyncScene(string scenePath)
+    {
+        yield return null;
+        
+        _asyncOperation = SceneManager.LoadSceneAsync(scenePath, LoadSceneMode.Single);
+        
+        _asyncOperation.allowSceneActivation = false;
+
+        while (!_asyncOperation.isDone)
+        {
+            if (_asyncOperation.progress >= 0.9f)
+            {
+                _asyncOperation.allowSceneActivation = true;
+            }
+            
+            yield return null;
+        }
+    }
+
+    private void InstantiatePrefabsSetOnTrackable(TrackableBehaviour trackableBehaviour, ScenePrefabsSet set)
+    {
+        List<GameObject> targetPrefabs = new List<GameObject>();
+        for (int i = 0; i < set.targets.Length; i++)
+        {
+            var go = Instantiate(set.targets[i], trackableBehaviour.gameObject.transform, true);
+            targetPrefabs.Add(go);
+        }
+       
+        TargetPrefabsContainer targetPrefabsContainer = trackableBehaviour.GetComponent<TargetPrefabsContainer>();
+        
+        targetPrefabsContainer.SetTarget(targetPrefabs, 0);
+        
+        TargetContentManager.SetCurrentTarget(targetPrefabsContainer.GetTarget(), targetPrefabsContainer.GetTransitionPrefab());
+    }
+    
+    private void InstantiatePrefabsOnTrackables(List<TrackableBehaviour> trackableBehaviours, ScenePrefabsSet set)
+    {
+        for (int i = 0; i < set.targets.Length; i++)
+        {
+           var go = Instantiate(set.targets[i], trackableBehaviours[i].gameObject.transform, true);
+        }
+        
+    }
+
 }
