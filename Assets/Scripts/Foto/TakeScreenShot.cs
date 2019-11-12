@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -8,10 +9,6 @@ using UnityEngine.UI;
 public class TakeScreenShot : MonoBehaviour
 {
 	public string screenShotName = "screenshot.png";
-    [SerializeField]
-	private CanvasController canvasController;
-	[SerializeField]
-	private Canvas shareCanvas;
 	[SerializeField]
 	private Button b1,b2;
 
@@ -24,19 +21,45 @@ public class TakeScreenShot : MonoBehaviour
 	private const string ScreenShotText = "";
 	private const string EmailSubject = "Re:Store AR app photo";
 
-	private bool _inProgress = false;
-	
+	[HideInInspector] 
+	public bool inProgress = false;
+
+	private Canvas _shareCanvas;
+
+	private void Awake()
+	{
+		_shareCanvas = gameObject.GetComponent<Canvas>();
+		_shareCanvas.enabled = false;
+	}
+
+	public void TakePhoto()
+	{
+		if (!inProgress)
+		{
+			StartCoroutine(TakeAndShowPhoto());
+		}
+	}
+
+	public void SharePhoto()
+	{
+		ShareScreenShotWithText(ScreenShotText);
+	}
+
+	public void CloseShareCanvas()
+	{
+		_shareCanvas.enabled = false;
+	}
 	private IEnumerator TakeAndShowPhoto()
 	{  
 		yield return StartCoroutine(CaptureScreenImage());
 		
 		ShowScreenShot();
-
-		_inProgress = false;
+		_shareCanvas.enabled = true;
+		inProgress = false;
 	}
 	private IEnumerator CaptureScreenImage()
 	{
-		_inProgress = true;
+		inProgress = true;
 		yield return new WaitForEndOfFrame();
 
 		Texture2D img = new Texture2D((int)width, (int)height, TextureFormat.RGBA32, false);
@@ -50,7 +73,7 @@ public class TakeScreenShot : MonoBehaviour
 
 	private void ShowScreenShot(){
 		if (_lastImage != null) {
-			Image shareCanvasImage = shareCanvas.transform.GetChild(0).gameObject.GetComponent<Image>();
+			Image shareCanvasImage = gameObject.transform.GetChild(0).gameObject.GetComponent<Image>();
 			var rect = new Rect(0,0,_lastImage.width, _lastImage.height);
 			Sprite s = Sprite.Create(_lastImage,rect, new Vector2(0.5f, 0.5f));
 			shareCanvasImage.sprite = s;

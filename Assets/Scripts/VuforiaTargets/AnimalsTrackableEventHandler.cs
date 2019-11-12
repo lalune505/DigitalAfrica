@@ -20,7 +20,11 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
         _canvasController.ActivatePrefabSwitcherButtons(true);
         
         TargetContentManager.ActivateTargetPrefab();
-       
+        
+        _canvasController.ShowOnTargetGOs(true);
+        
+        _canvasController.ShowTargetPanel(false);
+
     }
     protected override void OnTrackingLost()
     {
@@ -28,6 +32,10 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
         _canvasController.ActivatePrefabSwitcherButtons(false);
         
         TargetContentManager.UpdateNameTextField("");
+        
+        _canvasController.ShowOnTargetGOs(false);
+        
+        _canvasController.ShowTargetPanel(true);
     }
 
     #endregion // PROTECTED_METHODS
