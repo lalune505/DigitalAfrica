@@ -16,7 +16,7 @@ public class TestTargetsController : MonoBehaviour
     private const string MaskScenePath = "Assets/Scenes/MasksScene.unity";
     private const string AnimalsScenePath = "Assets/Scenes/AnimalsScene.unity";
 
-    private CanvasController _canvasController;
+    private AnimalsCanvasController _canvasController;
     private TargetPrefabsContainer targetPrefabsContainer;
 
     private void Start()
@@ -25,7 +25,7 @@ public class TestTargetsController : MonoBehaviour
         
         _currentScene = SceneManager.GetActiveScene();
 
-        _canvasController = FindObjectOfType<CanvasController>();
+        _canvasController = FindObjectOfType<AnimalsCanvasController>();
 
         if (_currentScene.path.Equals(MaskScenePath))
         {
@@ -39,7 +39,7 @@ public class TestTargetsController : MonoBehaviour
         
         if (_canvasController != null)
         {
-            _canvasController.ActivatePrefabSwitcherButtons(false);
+            _canvasController.EnablePrefabSwitcherButtons(false);
         }
     }
 
@@ -57,7 +57,7 @@ public class TestTargetsController : MonoBehaviour
         
         if (_canvasController != null)
         {
-            _canvasController.ActivatePrefabSwitcherButtons(true);
+            _canvasController.EnablePrefabSwitcherButtons(true);
         }
 
         if (targetPrefabsContainer != null)
@@ -76,7 +76,7 @@ public class TestTargetsController : MonoBehaviour
 
         if (_canvasController != null)
         {
-            _canvasController.ActivatePrefabSwitcherButtons(false);
+            _canvasController.EnablePrefabSwitcherButtons(false);
         }
         TargetContentManager.UpdateNameTextField("");
     }
