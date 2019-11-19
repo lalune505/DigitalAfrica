@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
 {
-    private CanvasController _canvasController;
+    private MainCanvasController _mainCanvasController;
     private void Awake()
     {
         //_canvasController = FindObjectOfType<CanvasController>();
