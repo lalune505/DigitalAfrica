@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 90367ea7a631d1540bd6e23e15e1dc22
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BaseDown
+    100002: BaseUp
+    100004: LStick1
+    100006: LStick2
+    100008: //RootNode
+    100010: Neck1
+    100012: Neck2
+    100014: Neck3
+    100016: Neck4
+    100018: Neck5
+    100020: RStick1
+    100022: RStick2
+    100024: Stone1
+    100026: Stone2
+    100028: Stone3
+    400000: BaseDown
+    400002: BaseUp
+    400004: LStick1
+    400006: LStick2
+    400008: //RootNode
+    400010: Neck1
+    400012: Neck2
+    400014: Neck3
+    400016: Neck4
+    400018: Neck5
+    400020: RStick1
+    400022: RStick2
+    400024: Stone1
+    400026: Stone2
+    400028: Stone3
+    2100000: lambert1
+    2300000: BaseDown
+    2300002: BaseUp
+    2300004: LStick1
+    2300006: LStick2
+    2300008: Neck1
+    2300010: Neck2
+    2300012: Neck3
+    2300014: Neck4
+    2300016: Neck5
+    2300018: RStick1
+    2300020: RStick2
+    2300022: Stone1
+    2300024: Stone2
+    2300026: Stone3
+    3300000: BaseDown
+    3300002: BaseUp
+    3300004: LStick1
+    3300006: LStick2
+    3300008: Neck1
+    3300010: Neck2
+    3300012: Neck3
+    3300014: Neck4
+    3300016: Neck5
+    3300018: RStick1
+    3300020: RStick2
+    3300022: Stone1
+    3300024: Stone2
+    3300026: Stone3
+    4300000: BaseUp
+    4300002: BaseDown
+    4300004: LStick2
+    4300006: LStick1
+    4300008: RStick2
+    4300010: RStick1
+    4300012: Stone1
+    4300014: Stone2
+    4300016: Stone3
+    4300018: Neck5
+    4300020: Neck4
+    4300022: Neck3
+    4300024: Neck2
+    4300026: Neck1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
