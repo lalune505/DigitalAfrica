@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AnimalsCanvasController : MonoBehaviour
 {
-    [SerializeField] private GameObject switcherButtons;
+    public GameObject animalNameTextGo;
+    public GameObject switcherButtons;
+    public GameObject targetPanel;
 
-    [SerializeField] private GameObject targetPanel;
-    
+
     public void ShowNextPrefab()
     {
         TargetContentManager.ShowNext();

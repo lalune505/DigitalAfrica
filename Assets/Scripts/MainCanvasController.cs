@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainCanvasController : MonoBehaviour
 {
@@ -20,7 +21,10 @@ public class MainCanvasController : MonoBehaviour
     {
         StartCoroutine(PhotoCoroutine());
     }
-
+    public void LoadMenuScene()
+    {
+        SceneLoader.instance.LoadMenuScene();
+    }
     private IEnumerator PhotoCoroutine()
     {
         flashLight.SetActive(true);
@@ -36,4 +40,5 @@ public class MainCanvasController : MonoBehaviour
         }
         _mainCanvas.enabled = true;
     }
+    
 }

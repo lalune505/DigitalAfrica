@@ -334,7 +334,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1171288062418891744}
         m_MethodName: ShowPrevPrefab
         m_Mode: 1
         m_Arguments:
@@ -829,7 +829,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1171288062418891744}
         m_MethodName: ShowNextPrefab
         m_Mode: 1
         m_Arguments:
@@ -1323,5 +1323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b06c2a43e9549bfb441ae136bc1b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  switcherButtons: {fileID: 0}
-  targetPanel: {fileID: 0}
+  animalNameTextGo: {fileID: 1171288060654435575}
+  switcherButtons: {fileID: 1171288061831386857}
+  targetPanel: {fileID: 1171288061564995473}

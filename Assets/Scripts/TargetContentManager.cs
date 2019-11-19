@@ -5,16 +5,14 @@ using UnityEngine.UI;
 
 public class TargetContentManager : MonoBehaviour
 {
-    public GameObject textGo;
-    private static Text nameTextField;
     private static Target _currentTarget;
     private static bool _isHiding;
     private static GameObject _transitionGO;
     private static bool isNextPrefab;
-
+    private static Text nameTextField;
     void Awake()
     {
-        nameTextField = textGo.GetComponent<Text>();
+        nameTextField = FindObjectOfType<AnimalsCanvasController>().animalNameTextGo.GetComponent<Text>();
         UpdateNameTextField("");
     }
 
