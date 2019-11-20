@@ -107,7 +107,7 @@ public class SceneLoader : MonoBehaviour
         List<GameObject> targetPrefabs = new List<GameObject>();
         for (int i = 0; i < set.targets.Length; i++)
         {
-            var go = Instantiate(set.targets[i], trackableBehaviour.gameObject.transform, true);
+            var go = Instantiate(set.targets[i], trackableBehaviour.gameObject.transform, false);
             targetPrefabs.Add(go);
         }
        
@@ -122,8 +122,7 @@ public class SceneLoader : MonoBehaviour
     {
         for (int i = 0; i < set.targets.Length; i++)
         {
-           Instantiate(set.targets[i], trackableBehaviours[i].gameObject.transform, true);
-        }
+           Instantiate(set.targets[i], trackableBehaviours[i].gameObject.transform, false); }
         
     }
 
