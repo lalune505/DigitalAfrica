@@ -1,0 +1,394 @@
+fileFormatVersion: 2
+guid: 6069a7ff9aa19fa4d81679984d3afd2b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Pen_0
+    21300002: Pen_1
+    21300004: Pen_2
+    21300006: Pen_3
+    21300008: Pen_4
+    21300010: Pen_5
+    21300012: Pen_6
+    21300014: Pen_7
+    21300016: Pen_8
+    21300018: Pen_9
+    21300020: Pen_10
+    21300022: Pen_11
+    21300024: Pen_12
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pen_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 415
+        width: 108
+        height: 363
+      alignment: 9
+      pivot: {x: 0.85023206, y: 0.0004468345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f78932ddc9a47429d895da0e5a2637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 415
+        width: 69
+        height: 371
+      alignment: 9
+      pivot: {x: 0.04855037, y: 0.008220334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de0ed6f8f0e4ca4b8e241ad9fb986de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 399
+        width: 89
+        height: 381
+      alignment: 9
+      pivot: {x: 0.6625006, y: 0.021127855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa20bd0de9df5ca44aedf1c4daac1d70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_3
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 599
+        width: 69
+        height: 176
+      alignment: 9
+      pivot: {x: 0.91920406, y: -0.0056825117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c57e48dde4d3674483e64daeea63cdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 599
+        width: 66
+        height: 186
+      alignment: 9
+      pivot: {x: 0.3145835, y: -0.014382311}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee48a09573bdc7b45af0da55b1a1ca1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_5
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 400
+        width: 55
+        height: 174
+      alignment: 9
+      pivot: {x: 0.07522638, y: 0.007686045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced6eb4104aadc144814444dde13ac69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_6
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 408
+        width: 64
+        height: 161
+      alignment: 9
+      pivot: {x: 0.7085953, y: -0.004426186}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7c1d731a4371e4d912a7d5463e6426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_7
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 399
+        width: 70
+        height: 173
+      alignment: 9
+      pivot: {x: 0.7860727, y: 0.0048402995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce509be1ac904c448ad70f85df1106f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_8
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 32
+        width: 99
+        height: 328
+      alignment: 9
+      pivot: {x: 0.7696975, y: -0.0019824796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0a21914f7c4154dabae75cdc03bf19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_9
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 38
+        width: 121
+        height: 315
+      alignment: 9
+      pivot: {x: 0.031094385, y: 0.002022952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d51be41a47938544aeb9dd4642e895c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 7
+        width: 97
+        height: 377
+      alignment: 9
+      pivot: {x: 0.8211349, y: 0.004243188}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1652774dd765584cbea566d1ae56382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_11
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 32
+        width: 160
+        height: 327
+      alignment: 9
+      pivot: {x: 0.6321098, y: 0.010090901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d8f7dd830982f42b20bb41b16d9d6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pen_12
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 38
+        width: 102
+        height: 316
+      alignment: 9
+      pivot: {x: 0.54362816, y: 0.0071195047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ab99b3926eb1c4892c09e729a942e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f1e8b65ba41519049a52d3b74191eb5c
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
