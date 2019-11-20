@@ -4,11 +4,11 @@ using Vuforia;
 
 public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
 {
-    private CanvasController _canvasController;
+    private AnimalsCanvasController _canvasController;
     private TargetPrefabsContainer _targetPrefabsContainer;
     private void Awake()
     {
-        _canvasController = FindObjectOfType<CanvasController>();
+        _canvasController = FindObjectOfType<AnimalsCanvasController>();
         _targetPrefabsContainer = GetComponent<TargetPrefabsContainer>();
     }
 
@@ -17,17 +17,23 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
     protected override void OnTrackingFound()
     {
         base.OnTrackingFound();
-        _canvasController.ActivatePrefabSwitcherButtons(true);
+        
+        _canvasController.EnablePrefabSwitcherButtons(true);
         
         TargetContentManager.ActivateTargetPrefab();
-       
+
+        _canvasController.EnableTargetPanel(false);
+
     }
     protected override void OnTrackingLost()
     {
         base.OnTrackingLost();
-        _canvasController.ActivatePrefabSwitcherButtons(false);
+        
+        _canvasController.EnablePrefabSwitcherButtons(false);
         
         TargetContentManager.UpdateNameTextField("");
+
+        _canvasController.EnableTargetPanel(true);
     }
 
     #endregion // PROTECTED_METHODS
