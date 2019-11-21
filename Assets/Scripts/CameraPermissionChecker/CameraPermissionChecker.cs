@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 
 public class CameraPermissionChecker : MonoBehaviour {
 	
-	private bool _permissionAsked = false;
 	private SupportCanvasController _supportCanvasController;
 
 	private void Awake()
@@ -16,22 +15,12 @@ public class CameraPermissionChecker : MonoBehaviour {
 		_supportCanvasController = FindObjectOfType<SupportCanvasController>();
 	}
 	
-	public void VerifyPermissionSecondTime() {
-		
-		_permissionAsked = SaveManager.instance.sessionState.IsPermissionRequested;
-		
-		if (_permissionAsked)
-		{
-			VerifyPermission();	
-		}  
-		
-	}
 
 	public void VerifyPermission()
 	{
 		
 		#if UNITY_EDITOR
-		// Load AR Scene
+		SceneLoader.instance.LoadAnimalsScene();
 		#endif
 #if UNITY_IOS && !UNITY_EDITOR
         iOSCameraPermission.VerifyPermission(gameObject.name, "SampleCallback");
@@ -47,7 +36,7 @@ public class CameraPermissionChecker : MonoBehaviour {
 		       _supportCanvasController.ShowWarningPanel();
 		       break;
 	       case AndroidRuntimePermissions.Permission.Granted:
-		       SceneLoader.instance.LoadMainScene();
+		      
 		       break;
 	       case AndroidRuntimePermissions.Permission.ShouldAsk:
 	       {
@@ -55,7 +44,7 @@ public class CameraPermissionChecker : MonoBehaviour {
            
 		       if (result == AndroidRuntimePermissions.Permission.Granted)
 		       {
-			       SceneLoader.instance.LoadMainScene();
+			       SceneLoader.instance.LoadAnimalsScene();
 		       }
 		       else
 		       {
@@ -75,7 +64,7 @@ public class CameraPermissionChecker : MonoBehaviour {
     {       
         if (permissionWasGranted == "true" )
         {
-	        //LoadARScene
+	        SceneLoader.instance.LoadAnimalsScene();
         }
         else
         {

@@ -19,7 +19,7 @@ public class TakeScreenShot : MonoBehaviour
 	private string _mCapturePath;
 	
 	private const string ScreenShotText = "";
-	private const string EmailSubject = "Re:Store AR app photo";
+	private const string EmailSubject = "";
 
 	[HideInInspector] 
 	public bool inProgress = false;

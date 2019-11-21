@@ -29,7 +29,7 @@ public class TargetContentManager : MonoBehaviour
     {
         _currentTarget.GetCurrentTargetPrefab().SetActive(true);
 
-        UpdateNameTextField(_currentTarget.GetCurrentTargetPrefab().GetComponent<AnimalName>().GetAnimalName());
+        UpdateNameTextField(_currentTarget.GetCurrentTargetPrefab().GetComponent<Animal>().GetAnimalName());
 
         _isHiding = false;
     }
@@ -84,7 +84,7 @@ public class TargetContentManager : MonoBehaviour
         
         _currentTarget.GetCurrentTargetPrefab().SetActive(true);
         
-        UpdateNameTextField(_currentTarget.GetCurrentTargetPrefab().GetComponent<AnimalName>().GetAnimalName());
+        UpdateNameTextField(_currentTarget.GetCurrentTargetPrefab().GetComponent<Animal>().GetAnimalName());
     }
 
     public static void UpdateNameTextField(string text)

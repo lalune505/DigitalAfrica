@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,21 +7,19 @@ public class SupportCanvasController : MonoBehaviour
 {
     [SerializeField] private GameObject warningPanel;
     [SerializeField] private GameObject loadingPanel;
-    [SerializeField] private GameObject splashPanel;
-    [SerializeField] private CameraPermissionChecker cameraPermissionChecker;
 
-    void Start()
+    private void Awake()
     {
-        splashPanel.SetActive(true);
-       // splashPanel.GetComponent<SplashPanelController>().supportCanvasController = this;
+        HideLoading();
     }
+
     public void ShowWarningPanel()
     {
         warningPanel.SetActive(true);
         HideLoading();
     }
 
-    public void HideWarningPanel()
+    private void HideWarningPanel()
     {
         warningPanel.SetActive(false);
     }
@@ -38,14 +37,8 @@ public class SupportCanvasController : MonoBehaviour
         HideWarningPanel();
     }
     
-    public void VerifyPermissionOnStart()
-    {
-        cameraPermissionChecker.VerifyPermission();
-        splashPanel.SetActive(false);
-        ShowLoading();
-    }
 
-    private void ShowLoading()
+    public void ShowLoading()
     {
         loadingPanel.SetActive(true);
     }
