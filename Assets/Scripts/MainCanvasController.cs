@@ -8,6 +8,7 @@ public class MainCanvasController : MonoBehaviour
 {
     [SerializeField] private TakeScreenShot takeScreenShot;
     [SerializeField] private GameObject flashLight;
+    [SerializeField] private Canvas sceneCanvas;
 
     private Canvas _mainCanvas;
 
@@ -32,6 +33,8 @@ public class MainCanvasController : MonoBehaviour
         flashLight.SetActive(false);
         
         _mainCanvas.enabled = false;
+        sceneCanvas.enabled = false;
+        
         takeScreenShot.TakePhoto();
 
         while (takeScreenShot.inProgress)
@@ -39,6 +42,7 @@ public class MainCanvasController : MonoBehaviour
             yield return null;
         }
         _mainCanvas.enabled = true;
+        sceneCanvas.enabled = true;
     }
     
 }
