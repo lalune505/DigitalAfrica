@@ -10,6 +10,8 @@ public class TargetContentManager : MonoBehaviour
     private static GameObject _transitionGO;
     private static bool isNextPrefab;
     private static Text nameTextField;
+    private static Animal _animal;
+
     void Awake()
     {
         nameTextField = FindObjectOfType<AnimalsCanvasController>().animalNameTextGo.GetComponent<Text>();
@@ -29,8 +31,10 @@ public class TargetContentManager : MonoBehaviour
     {
         _currentTarget.GetCurrentTargetPrefab().SetActive(true);
 
-        UpdateNameTextField(_currentTarget.GetCurrentTargetPrefab().GetComponent<Animal>().GetAnimalName());
+        _animal = _currentTarget.GetCurrentTargetPrefab().GetComponent<Animal>();
 
+        SetAnimalInfo(_animal);
+        
         _isHiding = false;
     }
     private static void SetTransitionGO(GameObject go)
@@ -84,13 +88,26 @@ public class TargetContentManager : MonoBehaviour
         
         _currentTarget.GetCurrentTargetPrefab().SetActive(true);
         
-        UpdateNameTextField(_currentTarget.GetCurrentTargetPrefab().GetComponent<Animal>().GetAnimalName());
+        _animal = _currentTarget.GetCurrentTargetPrefab().GetComponent<Animal>();
+        
+        SetAnimalInfo(_animal);
+        
     }
 
     public static void UpdateNameTextField(string text)
     {
         nameTextField.text = text;
     }
+
+    private static void SetAnimalInfo(Animal animal)
+    {
+        UpdateNameTextField(animal.GetAnimalName());
+        
+        SoundManager.instance.SetAudioClip(_animal.GetAnimalAudio());
+        
+        SoundManager.instance.PlayAudioClip();
+    }
+    
 }
 
 public class Target

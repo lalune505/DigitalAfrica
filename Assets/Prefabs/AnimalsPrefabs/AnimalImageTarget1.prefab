@@ -24,14 +24,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4203302582702545174}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.115, z: 0}
-  m_LocalScale: {x: 0.308141, y: 0.308141, z: 0.308141}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 5940409500041020583}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &4293480812982086566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae6fd612d8b146d78512804c2c181dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Alaena margaritacea
+  animalName: "\u0427\u0435\u0440\u043D\u0430\u044F \u0442\u0440\u0430\u0432\u044F\u043D\u0430\u044F
+    \u0431\u0430\u0431\u043E\u0447\u043A\u0430"
+  animalAudio: {fileID: 8300000, guid: 52429b82ce760412099634a3d985ae0a, type: 3}
 --- !u!1 &5940409500040720427
 GameObject:
   m_ObjectHideFlags: 0

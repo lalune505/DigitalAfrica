@@ -1611,7 +1611,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8850718384981837016}
   - component: {fileID: 7778928667095380669}
-  - component: {fileID: 7423600294183746268}
   m_Layer: 0
   m_Name: AnimalImageTarget7
   m_TagString: Untagged
@@ -1626,14 +1625,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8850718384981837017}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.027, y: -0.136, z: -0.044}
-  m_LocalScale: {x: 1.6727, y: 1.6727, z: 1.6727}
+  m_LocalRotation: {x: 0, y: -0.70710677, z: -0.70710677, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 5275302842602694974}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 90, z: 90}
 --- !u!114 &7778928667095380669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1646,23 +1645,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae6fd612d8b146d78512804c2c181dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: "\u0428\u0438\u0440\u043E\u043A\u043E\u043A\u043B\u044E\u0432 \u0413\u0440\u0430\u0443\u0435\u0440\u0430"
---- !u!95 &7423600294183746268
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8850718384981837017}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  animalName: "\u0428\u0438\u0440\u043E\u043A\u043E\u043A\u043B\u044E\u0432 \u0413\u0440\u0430\u0443\u0435\u0440\u0430"
+  animalAudio: {fileID: 8300000, guid: 4911a9c07bfb94504a177267c4214827, type: 3}

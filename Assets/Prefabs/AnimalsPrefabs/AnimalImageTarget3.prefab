@@ -3156,16 +3156,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7417459934783047900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.70710677, z: -0.70710677, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 9156147060310082458}
   - {fileID: 7277719729642183168}
   - {fileID: 3748383261046728453}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 90, z: 90}
 --- !u!114 &7317301277000940683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3178,4 +3178,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae6fd612d8b146d78512804c2c181dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: "\u0427\u0451\u0440\u043D\u044B\u0439 \u043D\u043E\u0441\u043E\u0440\u043E\u0433"
+  animalName: "\u0427\u0435\u0440\u043D\u044B\u0439 \u043D\u043E\u0441\u043E\u0440\u043E\u0433"
+  animalAudio: {fileID: 8300000, guid: c54d3ced0323e4332843ecd7c6205846, type: 3}

@@ -8,8 +8,10 @@ public class AnimalsCanvasController : MonoBehaviour
     public GameObject animalNameTextGo;
     public GameObject switcherButtons;
     public GameObject targetPanel;
-
-
+    public GameObject soundButton;
+    public Sprite muteSprite;
+    public Sprite unMuteSprite;
+    
     public void ShowNextPrefab()
     {
         TargetContentManager.ShowNext();
@@ -26,5 +28,17 @@ public class AnimalsCanvasController : MonoBehaviour
     public void EnableTargetPanel(bool show)
     {
         targetPanel.SetActive(show);
+    }
+
+    public void MuteSound()
+    {
+        SoundManager.instance.MuteSound();
+
+       soundButton.GetComponent<Image>().sprite = SoundManager.instance.IsMute() ? muteSprite : unMuteSprite;
+    }
+
+    public void EnableButton(bool enable)
+    {
+        soundButton.SetActive(enable);
     }
 }
