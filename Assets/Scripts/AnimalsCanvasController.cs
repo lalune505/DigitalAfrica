@@ -27,4 +27,9 @@ public class AnimalsCanvasController : MonoBehaviour
     {
         targetPanel.SetActive(show);
     }
+
+    public void MuteSound()
+    {
+        SoundManager.instance.MuteSound();
+    }
 }

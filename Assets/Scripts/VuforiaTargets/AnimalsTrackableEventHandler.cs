@@ -40,9 +40,5 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
     }
 
     #endregion // PROTECTED_METHODS
-
-    private void OnDisable()
-    {
-        SoundManager.instance.StopAudioClip();
-    }
+    
 }

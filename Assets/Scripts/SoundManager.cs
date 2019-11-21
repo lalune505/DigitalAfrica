@@ -40,9 +40,9 @@ public class SoundManager : MonoBehaviour
         _audioSource.Stop();
     }
 
-    public void MuteSound(bool mute)
+    public void MuteSound()
     {
-        _audioSource.mute = mute;
+        _audioSource.mute = !_audioSource.mute;
     }
 
     public void PauseAudioSource()
