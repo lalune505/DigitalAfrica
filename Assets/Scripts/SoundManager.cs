@@ -53,6 +53,11 @@ public class SoundManager : MonoBehaviour
     {
         _audioSource.UnPause();
     }
+
+    public bool IsMute()
+    {
+        return _audioSource.mute;
+    }
     
     
 }
