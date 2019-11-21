@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae6fd612d8b146d78512804c2c181dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Alaena margaritacea
+  animalName: "\u0427\u0435\u0440\u043D\u0430\u044F \u0442\u0440\u0430\u0432\u044F\u043D\u0430\u044F
+    \u0431\u0430\u0431\u043E\u0447\u043A\u0430"
+  animalAudio: {fileID: 8300000, guid: 52429b82ce760412099634a3d985ae0a, type: 3}
 --- !u!1 &5940409500040720427
 GameObject:
   m_ObjectHideFlags: 0

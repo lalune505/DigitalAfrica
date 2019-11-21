@@ -1438,7 +1438,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae6fd612d8b146d78512804c2c181dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: "\u0421\u0430\u0432\u0430\u043D\u043D\u044B\u0439 \u0441\u043B\u043E\u043D"
+  animalName: "\u0410\u0444\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439
+    \u0441\u043B\u043E\u043D"
+  animalAudio: {fileID: 8300000, guid: 01426dd949b6044ce8feb637eddd79f5, type: 3}
 --- !u!1 &9012393654554667442
 GameObject:
   m_ObjectHideFlags: 0

@@ -1375,7 +1375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae6fd612d8b146d78512804c2c181dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: "\u041B\u0435\u0432"
+  animalName: "\u041B\u0435\u0432"
+  animalAudio: {fileID: 8300000, guid: c1305b24a29854bc6bd4d260debcc28a, type: 3}
 --- !u!1 &1150786263904273917
 GameObject:
   m_ObjectHideFlags: 0
