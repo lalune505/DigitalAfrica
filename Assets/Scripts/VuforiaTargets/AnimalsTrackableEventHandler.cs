@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 using Vuforia;
 
@@ -32,9 +33,16 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
         _canvasController.EnablePrefabSwitcherButtons(false);
         
         TargetContentManager.UpdateNameTextField("");
+        
+        SoundManager.instance.PauseAudioSource();
 
         _canvasController.EnableTargetPanel(true);
     }
 
     #endregion // PROTECTED_METHODS
+
+    private void OnDisable()
+    {
+        SoundManager.instance.StopAudioClip();
+    }
 }
