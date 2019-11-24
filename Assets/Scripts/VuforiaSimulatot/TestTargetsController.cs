@@ -16,7 +16,7 @@ public class TestTargetsController : MonoBehaviour
     private const string MaskScenePath = "Assets/Scenes/MasksScene.unity";
     private const string AnimalsScenePath = "Assets/Scenes/AnimalsScene.unity";
 
-    private AnimalsCanvasController _canvasController;
+    private AnimalsCanvasController _animalsCanvasController;
     private TargetPrefabsContainer targetPrefabsContainer;
 
     private void Start()
@@ -25,7 +25,7 @@ public class TestTargetsController : MonoBehaviour
         
         _currentScene = SceneManager.GetActiveScene();
 
-        _canvasController = FindObjectOfType<AnimalsCanvasController>();
+        _animalsCanvasController = FindObjectOfType<AnimalsCanvasController>();
 
         if (_currentScene.path.Equals(MaskScenePath))
         {
@@ -37,9 +37,9 @@ public class TestTargetsController : MonoBehaviour
             InstantiatePrefabsSetOnTrackable(testTargets[0], scenePrefabsSet);
         }
         
-        if (_canvasController != null)
+        if (_animalsCanvasController != null)
         {
-            _canvasController.EnablePrefabSwitcherButtons(false);
+            _animalsCanvasController.EnablePrefabSwitcherButtons(false);
         }
     }
 
@@ -55,15 +55,19 @@ public class TestTargetsController : MonoBehaviour
         
         _mainCamera.transform.eulerAngles = new Vector3(0, trackableGo.transform.eulerAngles.y, 0);
         
-        if (_canvasController != null)
+        if (_animalsCanvasController != null)
         {
-            _canvasController.EnablePrefabSwitcherButtons(true);
+            _animalsCanvasController.EnablePrefabSwitcherButtons(true);
         }
 
         if (targetPrefabsContainer != null)
         {
             TargetContentManager.ActivateTargetPrefab();
         }
+        
+        _animalsCanvasController.EnableTargetPanel(false);
+        
+        _animalsCanvasController.EnableButton(true);
 
     }
 
@@ -74,11 +78,18 @@ public class TestTargetsController : MonoBehaviour
             trackableBehaviour.OnTrackerUpdate(TestTrackableBehaviour.Status.NO_POSE);
         }
 
-        if (_canvasController != null)
+        if (_animalsCanvasController != null)
         {
-            _canvasController.EnablePrefabSwitcherButtons(false);
+            _animalsCanvasController.EnablePrefabSwitcherButtons(false);
         }
         TargetContentManager.UpdateNameTextField("");
+        
+        
+        _animalsCanvasController.EnableTargetPanel(true);
+        
+        _animalsCanvasController.EnableButton(false);
+        
+        SoundManager.instance.PauseAudioSource();
     }
     private void UpdateTrackablesEditor(string newTrackableName)
     {

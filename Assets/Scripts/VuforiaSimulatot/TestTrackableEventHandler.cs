@@ -80,6 +80,7 @@ public class TestTrackableEventHandler : MonoBehaviour, ITestTrackableEventHandl
             // Enable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = true;
+            
         }
     }
 
