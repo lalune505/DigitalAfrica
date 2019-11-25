@@ -1,7 +1,11 @@
 fileFormatVersion: 2
-guid: a7a9593e839be4e58ac71878435bd32d
+guid: f87eb80c4964e4e75bbaa44ad79ef98d
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ScanZooSpriteNew_0
+    21300002: ScanZooSpriteNew_1
+    21300004: ScanZooSpriteNew_2
+    21300006: ScanZooSpriteNew_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +44,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -104,11 +108,91 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ScanZooSpriteNew_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 925
+        height: 1291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f223f4278a92a45a58a9031aa33d9c9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScanZooSpriteNew_1
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 0
+        width: 925
+        height: 1291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888872837a3ff4d8e93cdb4345828a41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScanZooSpriteNew_2
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 9
+        width: 925
+        height: 1285
+      alignment: 9
+      pivot: {x: 0.53221154, y: 0.49536243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7261a59279a20411ab290bbc68f1495a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScanZooSpriteNew_3
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 0
+        width: 925
+        height: 1294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5a288bb49f74e4f920b6a77c9b5484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8c4b5d486874d499a8718861c82243a9
+    spriteID: be5ba40cfec3b4455a62fb7b925b4562
     vertices: []
     indices: 
     edges: []
