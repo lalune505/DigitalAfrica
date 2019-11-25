@@ -1,7 +1,11 @@
 fileFormatVersion: 2
-guid: b9cc097a69ed44eba8a98688caeecb87
+guid: 618dc1aef092d40b39f81db6212a7d67
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ScanMaskSpriteNew_0
+    21300002: ScanMaskSpriteNew_1
+    21300004: ScanMaskSpriteNew_2
+    21300006: ScanMaskSpriteNew_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +44,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -104,11 +108,91 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ScanMaskSpriteNew_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 925
+        height: 1366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498821bc8af8a4d45a6be3e464682eb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScanMaskSpriteNew_1
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 0
+        width: 925
+        height: 1366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682c98934a7d140169e8caeba953e7c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScanMaskSpriteNew_2
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 0
+        width: 925
+        height: 1366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17690d804410146319fd66dfaca4aca1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScanMaskSpriteNew_3
+      rect:
+        serializedVersion: 2
+        x: 2791
+        y: 0
+        width: 917
+        height: 1366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a620ed90f8a5742a59bc54bf886196ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c4c529d09d660435faca63bb147129aa
+    spriteID: 983a02a5d3ad748858ff4ceebf2bbcbe
     vertices: []
     indices: 
     edges: []
