@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5984908146866624846}
   - component: {fileID: 5984908146866624847}
   - component: {fileID: 3026099978787854078}
+  - component: {fileID: 7901667546267910166}
   m_Layer: 5
   m_Name: FrameMasks
   m_TagString: Untagged
@@ -77,6 +78,25 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &7901667546267910166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5984908146866624841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc14e80dfdf294de8ae9f6b0128bdeca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loop: 1
+  frameSeconds: 0.4
+  sprites:
+  - {fileID: 21300000, guid: 618dc1aef092d40b39f81db6212a7d67, type: 3}
+  - {fileID: 21300002, guid: 618dc1aef092d40b39f81db6212a7d67, type: 3}
+  - {fileID: 21300004, guid: 618dc1aef092d40b39f81db6212a7d67, type: 3}
+  - {fileID: 21300006, guid: 618dc1aef092d40b39f81db6212a7d67, type: 3}
 --- !u!1 &5984908146990497291
 GameObject:
   m_ObjectHideFlags: 0
