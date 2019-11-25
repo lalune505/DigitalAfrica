@@ -18,14 +18,11 @@ public class GameController : MonoBehaviour
     private float _resetTimer = 3f;
 
     private bool _isFinished = true;
-
-    private List<GameObject> _currentRoundPrefabs;
+    
     
     void Start()
     {
 
-       StartGame();
-        
     }
     
     void Update()
@@ -44,12 +41,12 @@ public class GameController : MonoBehaviour
     }
     private void StartNewRound()
     {
-        player.DestroyGO();
+        player.StopGame();
         
         if (scoreArea.collided)
         {
             scoreArea.collided = false;
-            if (_currentRoundPrefabs.Count > 1)
+         /*   if (_currentRoundPrefabs.Count > 1)
             {
                _currentRoundPrefabs.RemoveAt(_currentGoNumber);
             }
@@ -57,7 +54,7 @@ public class GameController : MonoBehaviour
             {
                 _isFinished = true;
                 return;
-            }
+            }*/
         }
         
         player.ConfigCurrentBall(Instantiate(GetRandomGameObject()));
@@ -67,17 +64,13 @@ public class GameController : MonoBehaviour
     }
     private GameObject GetRandomGameObject()
     {
-        _currentGoNumber = Random.Range(0, _currentRoundPrefabs.Count);
-        return _currentRoundPrefabs[_currentGoNumber];
+        _currentGoNumber = Random.Range(0, throwableGameObjects.Count);
+        return throwableGameObjects[_currentGoNumber];
     }
 
     public void StartGame()
     {
-        _currentRoundPrefabs = throwableGameObjects;
-
         _currentGoNumber = 0;
-        
-        player.gameObject.SetActive(true);
 
         StartNewRound();
         
@@ -86,20 +79,16 @@ public class GameController : MonoBehaviour
 
     public void StopGame()
     {
+        if (_isFinished) return;
         _isFinished = true;
 
-        player.DestroyGO();
-        
-        player.gameObject.SetActive(false);
+        player.StopGame();
 
         _currentGoNumber = 0;
 
+        Debug.Log("Game over");
+
     }
 
-    private void OnDisable()
-    {
-        StopGame();
-    }
-    
-    
+
 }

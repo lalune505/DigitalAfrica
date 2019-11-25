@@ -69,11 +69,12 @@ public class Player : MonoBehaviour
         _currentBallRigidBody.AddForce(_camera.transform.forward * _throwForce);
     }
 
-    public void DestroyGO()
+    public void StopGame()
     {
         if (_currentBall != null)
         {
             Destroy(_currentBall);
+            _holding = false;
         }
     }
     public bool IsHoldingBall()
