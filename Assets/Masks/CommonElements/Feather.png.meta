@@ -1,0 +1,394 @@
+fileFormatVersion: 2
+guid: 8d99702cdf991ff45bad0d6895f1ffa5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Feather_0
+    21300002: Feather_1
+    21300004: Feather_2
+    21300006: Feather_3
+    21300008: Feather_4
+    21300010: Feather_5
+    21300012: Feather_6
+    21300014: Feather_7
+    21300016: Feather_8
+    21300018: Feather_9
+    21300020: Feather_10
+    21300022: Feather_11
+    21300024: Feather_12
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Feather_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 415
+        width: 108
+        height: 363
+      alignment: 9
+      pivot: {x: 0.8628034, y: 0.00963725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0034dd3a9479a4ca75ec04c811d0cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 415
+        width: 69
+        height: 371
+      alignment: 9
+      pivot: {x: 0.013257897, y: 0.0021058775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7802cc019855c2e47b604a994635d2ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 399
+        width: 89
+        height: 381
+      alignment: 9
+      pivot: {x: 0.6635238, y: 0.00048227384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1dbd531d753334bbbc8ccf8a63f5e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_3
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 599
+        width: 69
+        height: 176
+      alignment: 9
+      pivot: {x: 0.90561885, y: 0.0038545781}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0276cbbfe97a97b43873d6504813ebd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 599
+        width: 66
+        height: 186
+      alignment: 9
+      pivot: {x: 0.31341645, y: 0.01247283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de144a99d35fc9409d345f4d8b2b243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_5
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 400
+        width: 55
+        height: 174
+      alignment: 9
+      pivot: {x: 0.072551936, y: 0.011019827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a024039253cd4e4c8e9beea2d112033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_6
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 408
+        width: 64
+        height: 161
+      alignment: 9
+      pivot: {x: 0.65743065, y: 0.0063044387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0cd647603e90241bde0fabd99848f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_7
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 399
+        width: 70
+        height: 173
+      alignment: 9
+      pivot: {x: 0.7718802, y: 0.03407808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b9e222ea9e0a3459721a53e01c3b37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_8
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 32
+        width: 99
+        height: 328
+      alignment: 9
+      pivot: {x: 0.782704, y: 0.015335339}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699fc25cfd3f1964c82b0989a7d5d573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_9
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 38
+        width: 121
+        height: 315
+      alignment: 9
+      pivot: {x: 0.03739362, y: 0.013103158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decb5dba99ff39d4bb4def4de35f61b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 7
+        width: 97
+        height: 377
+      alignment: 9
+      pivot: {x: 0.800074, y: 0.012999456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ec58a729ba9ac4e99fe7e659cd0a03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_11
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 32
+        width: 160
+        height: 327
+      alignment: 9
+      pivot: {x: 0.6329414, y: 0.01727666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d053983374524164f9e4375259e57613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather_12
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 38
+        width: 102
+        height: 316
+      alignment: 9
+      pivot: {x: 0.5439022, y: 0.018186823}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebcbb84a108e0c488dceb8508dd5bd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ef88a5437deadfb409108a550726cea9
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
