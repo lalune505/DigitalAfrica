@@ -36,7 +36,7 @@ public class CameraPermissionChecker : MonoBehaviour {
 		       _supportCanvasController.ShowWarningPanel();
 		       break;
 	       case AndroidRuntimePermissions.Permission.Granted:
-		      
+		       SceneLoader.instance.LoadAnimalsScene();
 		       break;
 	       case AndroidRuntimePermissions.Permission.ShouldAsk:
 	       {
@@ -54,7 +54,7 @@ public class CameraPermissionChecker : MonoBehaviour {
 		       break;
 	       }
        }
-       SaveManager.instance.SavePermissionRequest();
+//       SaveManager.instance.SavePermissionRequest();
 
 #endif
 	}
