@@ -1,12 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoadingPanelController : MonoBehaviour
 {
+    public Image loadingIcon;
     [SerializeField] private CameraPermissionChecker cameraPermissionChecker;
-    private bool _isChecked = false;
-    public void OnAnimFinishedEvent()
+    private bool _isChecked = false; 
+    private void CheckPermission()
     {
         if (_isChecked)
         {
@@ -16,5 +19,26 @@ public class LoadingPanelController : MonoBehaviour
         cameraPermissionChecker.VerifyPermission();
        
         _isChecked = true;
+    }
+
+    private void OnEnable()
+    {
+        CheckPermission();
+    }
+
+    private void Update()
+    {
+        if (loadingIcon)
+        {
+            if (!SceneLoader.instance.sceneReadyToActivate)
+            {
+                loadingIcon.rectTransform.Rotate(Vector3.forward, 90.0f * Time.deltaTime * 2);
+            }
+            else
+            {
+                loadingIcon.enabled = false;
+            }
+        }
+
     }
 }

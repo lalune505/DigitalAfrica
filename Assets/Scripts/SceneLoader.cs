@@ -10,6 +10,7 @@ public class SceneLoader : MonoBehaviour
 {
     public ScenePrefabsSet animalsScenePrefabsSet;
     public ScenePrefabsSet masksScenePrefabsSet;
+    public bool sceneReadyToActivate;
 
     private List<TrackableBehaviour> _trackableBehaviours;
     
@@ -65,6 +66,7 @@ public class SceneLoader : MonoBehaviour
         {
             if (_asyncOperation.progress >= 0.9f && (uint) VuforiaRuntime.Instance.InitializationState > 0U)
             {
+                sceneReadyToActivate = true;
                 _asyncOperation.allowSceneActivation = true;
             }
 
@@ -80,6 +82,8 @@ public class SceneLoader : MonoBehaviour
         {
             InstantiatePrefabsSetOnTrackable(FindObjectOfType<TrackableBehaviour>(), scenePrefabsSet);
         }
+        
+        sceneReadyToActivate = false;
     }
     
 
