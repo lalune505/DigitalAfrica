@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ScoreArea : MonoBehaviour
 {
+    private Animator maskAnimator;
     [HideInInspector]
     public bool collided;
     private void OnTriggerEnter(Collider other)
@@ -12,8 +13,12 @@ public class ScoreArea : MonoBehaviour
         if (!collided)
         {
             collided = true;
-            Debug.Log("Collided");
+            maskAnimator.SetTrigger("Hit");
         }
     }
-    
+
+    private void Awake()
+    {
+        maskAnimator = GetComponentInParent<Animator>();
+    }
 }

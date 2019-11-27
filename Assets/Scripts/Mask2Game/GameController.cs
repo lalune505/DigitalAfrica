@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class GameController : MonoBehaviour
+public class GameController : MonoBehaviour, IUserInteractable
 {
     [SerializeField] private Player player;
 
@@ -19,11 +19,6 @@ public class GameController : MonoBehaviour
 
     private bool _isFinished = true;
     
-    
-    void Start()
-    {
-
-    }
     
     void Update()
     {
@@ -90,5 +85,12 @@ public class GameController : MonoBehaviour
 
     }
 
+    public void HandleInputOccur(RaycastHit hit)
+    {
+        if (_isFinished)
+        {
+            StartGame();
+        }
+    }
 
 }
