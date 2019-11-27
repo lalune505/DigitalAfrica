@@ -47,7 +47,7 @@ public class TargetContentManager : MonoBehaviour
         {
             _isHiding = true;
             
-            _transitionGO.SetActive(true);
+            _transitionGO.GetComponent<Animator>().SetTrigger("Transition");
 
             isNextPrefab = true;
         }
@@ -59,7 +59,7 @@ public class TargetContentManager : MonoBehaviour
         {
             _isHiding = true;
             
-            _transitionGO.SetActive(true);
+            _transitionGO.GetComponent<Animator>().SetTrigger("Transition");
 
             isNextPrefab = false;
         }
@@ -68,8 +68,6 @@ public class TargetContentManager : MonoBehaviour
     public static void HidePrefabAnimationEvent()
     {
         _isHiding = false;
-        
-        _transitionGO.SetActive(false);
 
     }
 
