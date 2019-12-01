@@ -1,83 +1,48 @@
 fileFormatVersion: 2
-guid: 90367ea7a631d1540bd6e23e15e1dc22
+guid: 8c15b12a27ac3304991c8a1855f83f3a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: BaseDown
-    100002: BaseUp
-    100004: LStick1
-    100006: LStick2
-    100008: //RootNode
-    100010: Neck1
-    100012: Neck2
-    100014: Neck3
-    100016: Neck4
-    100018: Neck5
-    100020: RStick1
-    100022: RStick2
-    100024: Stone1
-    100026: Stone2
-    100028: Stone3
-    100030: MaskAll
-    400000: BaseDown
-    400002: BaseUp
-    400004: LStick1
-    400006: LStick2
-    400008: //RootNode
-    400010: Neck1
-    400012: Neck2
-    400014: Neck3
-    400016: Neck4
-    400018: Neck5
-    400020: RStick1
-    400022: RStick2
-    400024: Stone1
-    400026: Stone2
-    400028: Stone3
-    400030: MaskAll
-    2100000: lambert1
-    2300000: BaseDown
-    2300002: BaseUp
-    2300004: LStick1
-    2300006: LStick2
-    2300008: Neck1
-    2300010: Neck2
-    2300012: Neck3
-    2300014: Neck4
-    2300016: Neck5
-    2300018: RStick1
-    2300020: RStick2
-    2300022: Stone1
-    2300024: Stone2
-    2300026: Stone3
-    3300000: BaseDown
-    3300002: BaseUp
-    3300004: LStick1
-    3300006: LStick2
-    3300008: Neck1
-    3300010: Neck2
-    3300012: Neck3
-    3300014: Neck4
-    3300016: Neck5
-    3300018: RStick1
-    3300020: RStick2
-    3300022: Stone1
-    3300024: Stone2
-    3300026: Stone3
-    4300000: BaseUp
-    4300002: BaseDown
-    4300004: LStick2
-    4300006: LStick1
-    4300008: RStick2
-    4300010: RStick1
-    4300012: Stone1
-    4300014: Stone2
-    4300016: Stone3
-    4300018: Neck5
-    4300020: Neck4
-    4300022: Neck3
-    4300024: Neck2
-    4300026: Neck1
+    100000: group1
+    100002: Leaf1
+    100004: Leaf2
+    100006: Leaf3
+    100008: Leaf4
+    100010: Leaf5
+    100012: Leaf6
+    100014: Leaf7
+    100016: //RootNode
+    400000: group1
+    400002: Leaf1
+    400004: Leaf2
+    400006: Leaf3
+    400008: Leaf4
+    400010: Leaf5
+    400012: Leaf6
+    400014: Leaf7
+    400016: //RootNode
+    2100000: blinn2
+    2300000: Leaf1
+    2300002: Leaf2
+    2300004: Leaf3
+    2300006: Leaf4
+    2300008: Leaf5
+    2300010: Leaf6
+    2300012: Leaf7
+    3300000: Leaf1
+    3300002: Leaf2
+    3300004: Leaf3
+    3300006: Leaf4
+    3300008: Leaf5
+    3300010: Leaf6
+    3300012: Leaf7
+    4300000: Leaf1
+    4300002: Leaf2
+    4300004: Leaf3
+    4300006: Leaf4
+    4300008: Leaf5
+    4300010: Leaf6
+    4300012: Leaf7
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -109,7 +74,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.001
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
