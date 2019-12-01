@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: a3c7807fb88e48144a2816adccdf4146
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ball
+    100002: Ears
+    100004: EarsRings
+    100006: Eyes
+    100008: //RootNode
+    100010: MaskBody
+    100012: MaskFace
+    100014: Nose
+    100016: Nose1
+    100018: Nose2
+    100020: NoseRing
+    100022: pasted__pCube4
+    100024: pasted__pCylinder3
+    100026: pasted__transform1
+    100028: Rope
+    400000: Ball
+    400002: Ears
+    400004: EarsRings
+    400006: Eyes
+    400008: //RootNode
+    400010: MaskBody
+    400012: MaskFace
+    400014: Nose
+    400016: Nose1
+    400018: Nose2
+    400020: NoseRing
+    400022: pasted__pCube4
+    400024: pasted__pCylinder3
+    400026: pasted__transform1
+    400028: Rope
+    2100000: lambert1
+    2100002: pasted__lambert2
+    2300000: Ball
+    2300002: Ears
+    2300004: Eyes
+    2300006: MaskBody
+    2300008: MaskFace
+    2300010: Nose1
+    2300012: Nose2
+    2300014: NoseRing
+    2300016: pasted__pCylinder3
+    3300000: Ball
+    3300002: Ears
+    3300004: Eyes
+    3300006: MaskBody
+    3300008: MaskFace
+    3300010: Nose1
+    3300012: Nose2
+    3300014: NoseRing
+    3300016: pasted__pCylinder3
+    4300000: MaskBody
+    4300002: Ball
+    4300004: Ears
+    4300006: pasted__pCylinder3
+    4300008: Eyes
+    4300010: Nose1
+    4300012: Nose2
+    4300014: NoseRing
+    4300016: MaskFace
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
