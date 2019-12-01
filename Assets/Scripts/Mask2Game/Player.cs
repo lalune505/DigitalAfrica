@@ -8,11 +8,11 @@ public class Player : MonoBehaviour
     private Rigidbody _currentBallRigidBody;
     private Camera  _camera;
     
-    private float _ballDistanceZ = 2.25f;
-    private float _ballDistanceY = -1f;
+    private float _ballDistanceZ = 0.75f;
+    private float _ballDistanceY = -0.3f;
     private float _throwForce = 500f;
 
-    private bool _holding = true;
+    private bool _holding;
     
     // Start is called before the first frame update
     void Start()
@@ -77,6 +77,7 @@ public class Player : MonoBehaviour
             _holding = false;
         }
     }
+
     public bool IsHoldingBall()
     {
         return _holding;

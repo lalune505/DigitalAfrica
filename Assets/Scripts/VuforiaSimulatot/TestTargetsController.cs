@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class TestTargetsController : MonoBehaviour
 {
+    public InputManager inputManger;
     public List<TestTrackableBehaviour> testTargets;
     public ScenePrefabsSet scenePrefabsSet;
     [SerializeField] private float offSet;
@@ -124,6 +125,8 @@ public class TestTargetsController : MonoBehaviour
         {
             Instantiate(set.targets[i], trackableBehaviours[i].gameObject.transform, false);
         }
+        
+        inputManger.Init();
         
     }
 }
