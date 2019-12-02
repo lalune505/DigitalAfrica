@@ -1,67 +1,78 @@
 fileFormatVersion: 2
-guid: a3c7807fb88e48144a2816adccdf4146
+guid: 149a18c7ddc5b274a9b1fd6b3772528c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Ball
-    100002: Ears
+    100000: Ball_LP
+    100002: Ears_LP
     100004: EarsRings
-    100006: Eyes
-    100008: //RootNode
-    100010: MaskBody
-    100012: MaskFace
-    100014: Nose
-    100016: Nose1
-    100018: Nose2
-    100020: NoseRing
-    100022: pasted__pCube4
-    100024: pasted__pCylinder3
-    100026: pasted__transform1
-    100028: Rope
-    400000: Ball
-    400002: Ears
+    100006: Eyes1_LP
+    100008: Eyes_LP
+    100010: jav_LP
+    100012: //RootNode
+    100014: MaskBodyLP
+    100016: MaskFace_LP
+    100018: Nose
+    100020: Nose1_LP
+    100022: Nose2_LP
+    100024: NoseRing
+    100026: sergaLP
+    100028: ushkiLP1
+    400000: Ball_LP
+    400002: Ears_LP
     400004: EarsRings
-    400006: Eyes
-    400008: //RootNode
-    400010: MaskBody
-    400012: MaskFace
-    400014: Nose
-    400016: Nose1
-    400018: Nose2
-    400020: NoseRing
-    400022: pasted__pCube4
-    400024: pasted__pCylinder3
-    400026: pasted__transform1
-    400028: Rope
-    2100000: lambert1
+    400006: Eyes1_LP
+    400008: Eyes_LP
+    400010: jav_LP
+    400012: //RootNode
+    400014: MaskBodyLP
+    400016: MaskFace_LP
+    400018: Nose
+    400020: Nose1_LP
+    400022: Nose2_LP
+    400024: NoseRing
+    400026: sergaLP
+    400028: ushkiLP1
+    2100000: lambert2
     2100002: pasted__lambert2
-    2300000: Ball
-    2300002: Ears
-    2300004: Eyes
-    2300006: MaskBody
-    2300008: MaskFace
-    2300010: Nose1
-    2300012: Nose2
-    2300014: NoseRing
-    2300016: pasted__pCylinder3
-    3300000: Ball
-    3300002: Ears
-    3300004: Eyes
-    3300006: MaskBody
-    3300008: MaskFace
-    3300010: Nose1
-    3300012: Nose2
-    3300014: NoseRing
-    3300016: pasted__pCylinder3
-    4300000: MaskBody
-    4300002: Ball
-    4300004: Ears
-    4300006: pasted__pCylinder3
-    4300008: Eyes
-    4300010: Nose1
-    4300012: Nose2
+    2300000: Ball_LP
+    2300002: Ears_LP
+    2300004: Eyes1_LP
+    2300006: Eyes_LP
+    2300008: jav_LP
+    2300010: MaskBodyLP
+    2300012: MaskFace_LP
+    2300014: Nose1_LP
+    2300016: Nose2_LP
+    2300018: NoseRing
+    2300020: sergaLP
+    2300022: ushkiLP1
+    3300000: Ball_LP
+    3300002: Ears_LP
+    3300004: Eyes1_LP
+    3300006: Eyes_LP
+    3300008: jav_LP
+    3300010: MaskBodyLP
+    3300012: MaskFace_LP
+    3300014: Nose1_LP
+    3300016: Nose2_LP
+    3300018: NoseRing
+    3300020: sergaLP
+    3300022: ushkiLP1
+    4300000: MaskBodyLP
+    4300002: Ball_LP
+    4300004: Ears_LP
+    4300006: jav_LP
+    4300008: Eyes_LP
+    4300010: Nose1_LP
+    4300012: Nose2_LP
     4300014: NoseRing
-    4300016: MaskFace
+    4300016: MaskFace_LP
+    4300018: Eyes1_LP
+    4300020: sergaLP
+    4300022: ushkiLP1
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -93,7 +104,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.5
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -114,8 +125,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -142,7 +153,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
