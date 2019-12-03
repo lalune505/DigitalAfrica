@@ -8,17 +8,10 @@ public class LoadingPanelController : MonoBehaviour
 {
     public Image loadingIcon;
     [SerializeField] private CameraPermissionChecker cameraPermissionChecker;
-    private bool _isChecked = false; 
+   
     private void CheckPermission()
     {
-        if (_isChecked)
-        {
-            return;
-        }
-
         cameraPermissionChecker.VerifyPermission();
-       
-        _isChecked = true;
     }
 
     private void OnEnable()

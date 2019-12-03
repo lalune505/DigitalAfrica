@@ -21,23 +21,36 @@ public class SceneLoader : MonoBehaviour
     private const string AnimalsARScenePath = "Assets/Scenes/AnimalsARScene.unity";
     private const string MasksARScenePath = "Assets/Scenes/MasksARScene.unity";
     private const string MenuScenePath = "Assets/Scenes/MenuScene.unity";
-    
+    public bool animalsButtonWasPressed;
 
     private void Awake()
     {
 
-        if (instance == null)
-        {
+        if (instance == null) {
             instance = this;
-        } 
-        else if (instance == this)
+        } else if (instance != this)
         {
-            Destroy(gameObject);
+            Destroy (gameObject);
         }
-        
-        DontDestroyOnLoad(gameObject);
+
+        DontDestroyOnLoad (gameObject);
     }
 
+    public void SetAnimalsButtonWasPressed(bool pressed)
+    {
+        animalsButtonWasPressed = pressed;
+    }
+    public void LoadARScene()
+    {
+        if (animalsButtonWasPressed)
+        {
+            LoadAnimalsScene();
+        }
+        else
+        {
+            LoadMasksScene();
+        }
+    }
     public void LoadAnimalsScene()
     {
         StartCoroutine(LoadAsyncARScene(AnimalsARScenePath, animalsScenePrefabsSet));
