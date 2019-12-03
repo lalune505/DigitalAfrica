@@ -1232,7 +1232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2340116291620043487}
-  - component: {fileID: 1758874577751670440}
+  - component: {fileID: 4280067028627823598}
   m_Layer: 0
   m_Name: MaskImageTarget4
   m_TagString: Untagged
@@ -1256,25 +1256,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1758874577751670440
-Animator:
-  serializedVersion: 3
+--- !u!114 &4280067028627823598
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2340116291620043484}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 149a18c7ddc5b274a9b1fd6b3772528c, type: 3}
-  m_Controller: {fileID: 9100000, guid: 334f2438096bde94c87e6605f26ef32f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be2b6a562dd2419794dfb3445cb4dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conditions:
+  - {fileID: 3568758361763718537}
+  - {fileID: 7628418090081928396}
+  - {fileID: 7628418089900491376}
+  - {fileID: 7628418088447889873}
 --- !u!1 &2372774010223710459
 GameObject:
   m_ObjectHideFlags: 0
@@ -11665,7 +11663,7 @@ Transform:
   m_GameObject: {fileID: 7628418088994192100}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.008, y: 0, z: 0}
-  m_LocalScale: {x: 0.98, y: 0.9800005, z: 0.9800005}
+  m_LocalScale: {x: 1.4907463, y: 1.5731014, z: 1.4647241}
   m_Children:
   - {fileID: 7713302678629569284}
   - {fileID: 7628418090106442802}
@@ -21316,7 +21314,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7878218951902025220}
   - component: {fileID: 6144046954370912883}
-  m_Layer: 0
+  - component: {fileID: 4241434401580226912}
+  m_Layer: 12
   m_Name: ContentMask4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21362,6 +21361,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &4241434401580226912
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7878218951902025223}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.7
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8294651568271050561
 GameObject:
   m_ObjectHideFlags: 0
