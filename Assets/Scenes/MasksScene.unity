@@ -909,6 +909,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230789560}
   m_CullTransparentMesh: 0
+--- !u!114 &336499765 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 959681763413873596, guid: c2e9c7749abca4c14a227f642eee72e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6644422058341921480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5091bc8ee64ed4697b601590f556af68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &378110734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2356,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1000734921 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5548149392280425736, guid: c2e9c7749abca4c14a227f642eee72e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6644422058341921480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58bfdb8bfb7954082a0f8e758005af75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1007425264
 GameObject:
   m_ObjectHideFlags: 0
@@ -3005,6 +3029,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420932101}
   m_CullTransparentMesh: 0
+--- !u!114 &1431456397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4143755004645546031, guid: c2e9c7749abca4c14a227f642eee72e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6644422058341921480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8203f2446cc684dd68765cfcfd14f1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1462135660
 GameObject:
   m_ObjectHideFlags: 0
@@ -4420,5 +4456,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6836870124765650508, guid: c2e9c7749abca4c14a227f642eee72e3,
+        type: 3}
+      propertyPath: weatherMaskManager
+      value: 
+      objectReference: {fileID: 1431456397}
+    - target: {fileID: 6836870124765650508, guid: c2e9c7749abca4c14a227f642eee72e3,
+        type: 3}
+      propertyPath: maskManager
+      value: 
+      objectReference: {fileID: 1000734921}
+    - target: {fileID: 6836870124765650508, guid: c2e9c7749abca4c14a227f642eee72e3,
+        type: 3}
+      propertyPath: colorMaskManager
+      value: 
+      objectReference: {fileID: 336499765}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2e9c7749abca4c14a227f642eee72e3, type: 3}

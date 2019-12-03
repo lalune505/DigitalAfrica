@@ -28,7 +28,7 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
             _maskAnimator.SetTrigger("Appear");
         }
         
-        _masksCanvasController.EnableTargetPanel(true);
+        _masksCanvasController.EnableTargetPanel(false);
 
     }
     protected override void OnTrackingLost()
@@ -41,7 +41,7 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
             _gameController.StopGame();
         }
         
-        _masksCanvasController.EnableTargetPanel(false);
+        _masksCanvasController.EnableTargetPanel(true);
     }
 
     #endregion // PROTECTED_METHODS
