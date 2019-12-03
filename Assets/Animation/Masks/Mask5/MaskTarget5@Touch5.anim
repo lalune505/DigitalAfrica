@@ -49,70 +49,70 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: 
+    path: Mask
   m_FloatCurves: []
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
+      value: {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Lip1
+    path: Mask/Lip1
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
+      value: {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Ears
+    path: Mask/Ears
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
+      value: {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Earing3
+    path: Mask/Earing3
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
+      value: {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Earing2
+    path: Mask/Earing2
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
+      value: {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Earing1
+    path: Mask/Earing1
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
+      value: {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Crown2
+    path: Mask/Crown2
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
+      value: {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Crown1
+    path: Mask/Crown1
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
+      value: {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Base
+    path: Mask/Base
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
+      value: {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Lip2
+    path: Mask/Lip2
     classID: 23
     script: {fileID: 0}
   m_SampleRate: 60
@@ -123,85 +123,85 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 3747441678
       attribute: 3
       script: {fileID: 0}
       typeID: 4
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3378622970
+      path: 3247616967
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 278851062
+      path: 409857995
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 1525557285
+      path: 1625268170
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 770250931
+      path: 400076636
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 3034597641
+      path: 2396126950
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 3125732583
+      path: 1051248006
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 591902045
+      path: 2812384316
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 1619415391
+      path: 1752519522
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 1349050432
+      path: 1486611069
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
-    - {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
-    - {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
-    - {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
-    - {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
-    - {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
-    - {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
-    - {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
-    - {fileID: 2100000, guid: 741c937181ff48d418a2fb78ce2f6f22, type: 2}
+    - {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
+    - {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
+    - {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
+    - {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
+    - {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
+    - {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
+    - {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
+    - {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
+    - {fileID: 2100000, guid: 1aebba9778a214244a642011cd6274f1, type: 2}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -257,7 +257,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: 
+    path: Mask
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -294,7 +294,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: 
+    path: Mask
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -331,7 +331,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: 
+    path: Mask
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []
