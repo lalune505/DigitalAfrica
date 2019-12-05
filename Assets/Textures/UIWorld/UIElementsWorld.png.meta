@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: b118fefecd81ac742986f4e921870957
+guid: fb690b8def2cb8740b91940a7d2d3f8c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ButtonWorldUI_0
-    21300002: ButtonWorldUI_1
-    21300004: ButtonWorldUI_2
+    21300000: UIElementsWorld_1
+    21300002: UIElementsWorld_2
+    21300004: UIElementsWorld_3
+    21300006: UIElementsWorld_4
+    21300008: UIElementsWorld_5
+    21300010: UIElementsWorld_6
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -109,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ButtonWorldUI_0
+      name: UIElementsWorld_1
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 343
-        height: 230
+        width: 552
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74ee1660437c47e4c83b37e1f56e2709
+      spriteID: 49c7ef61a491fda48a0ceb3b3a3a630b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ButtonWorldUI_1
+      name: UIElementsWorld_2
       rect:
         serializedVersion: 2
-        x: 352
-        y: 0
-        width: 345
-        height: 230
+        x: 565
+        y: 450
+        width: 145
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a936f82e863df4c92e1575ee1690a1
+      spriteID: 5bb156eba41ce984cb2dba748bd26584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ButtonWorldUI_2
+      name: UIElementsWorld_3
       rect:
         serializedVersion: 2
-        x: 710
-        y: 1
-        width: 333
-        height: 233
+        x: 565
+        y: 291
+        width: 142
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,7 +166,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af7d19df96f0f5041a2985ba879fd327
+      spriteID: 500726eb7a3e2154db1d6517e3b78031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIElementsWorld_4
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 215
+        width: 81
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed3686608dc51949911bc228dab02db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIElementsWorld_5
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 115
+        width: 65
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5af47f399160b4e927e6cf4041bcfa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIElementsWorld_6
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 114
+        width: 27
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1a9f1a2799ffc49b9c41f158cd3a00
       vertices: []
       indices: 
       edges: []
@@ -171,7 +234,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 664d157197db81e4b9e5da8120d165e9
+    spriteID: 2fb68985d95140c45b9d16cb84b69298
     vertices: []
     indices: 
     edges: []
