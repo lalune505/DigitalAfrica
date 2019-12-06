@@ -20,7 +20,7 @@ public class CameraPermissionChecker : MonoBehaviour {
 	{
 		
 		#if UNITY_EDITOR
-		SceneLoader.instance.LoadAnimalsScene();
+		SceneLoader.instance.LoadARScene();
 		#endif
 #if UNITY_IOS && !UNITY_EDITOR
         iOSCameraPermission.VerifyPermission(gameObject.name, "SampleCallback");
@@ -36,7 +36,7 @@ public class CameraPermissionChecker : MonoBehaviour {
 		       _supportCanvasController.ShowWarningPanel();
 		       break;
 	       case AndroidRuntimePermissions.Permission.Granted:
-		       SceneLoader.instance.LoadAnimalsScene();
+		       SceneLoader.instance.LoadARScene();
 		       break;
 	       case AndroidRuntimePermissions.Permission.ShouldAsk:
 	       {
@@ -44,7 +44,7 @@ public class CameraPermissionChecker : MonoBehaviour {
            
 		       if (result == AndroidRuntimePermissions.Permission.Granted)
 		       {
-			       SceneLoader.instance.LoadAnimalsScene();
+			        SceneLoader.instance.LoadARScene();
 		       }
 		       else
 		       {
@@ -64,7 +64,7 @@ public class CameraPermissionChecker : MonoBehaviour {
     {       
         if (permissionWasGranted == "true" )
         {
-	        SceneLoader.instance.LoadAnimalsScene();
+	        SceneLoader.instance.LoadARScene();
         }
         else
         {

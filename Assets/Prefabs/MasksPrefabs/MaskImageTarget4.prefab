@@ -1233,6 +1233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2340116291620043487}
   - component: {fileID: 4280067028627823598}
+  - component: {fileID: 114606203491912956}
   m_Layer: 0
   m_Name: MaskImageTarget4
   m_TagString: Untagged
@@ -1273,6 +1274,18 @@ MonoBehaviour:
   - {fileID: 7628418090081928396}
   - {fileID: 7628418089900491376}
   - {fileID: 7628418088447889873}
+--- !u!114 &114606203491912956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2340116291620043484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebc2d9c5aad0492f99f3b9229ec0200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2372774010223710459
 GameObject:
   m_ObjectHideFlags: 0
