@@ -5,16 +5,24 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
+    public WeatherMaskManager weatherMaskManager;
+    public MaskManager maskManager;
+    public ColorMaskManager colorMaskManager;
     private Camera _mainCamera;
     private LayerMask _layersToHit;
-    private const string ElementsLayerName = "GameMask";
+    private const string GameMaskLayerName = "GameMask";
+    private const string AnimationMasksLayerName = "Mask";
+    private const string WeatherMaskLayerName = "WeatherMask";
+    private const string ColorMaskLayerName = "ColorMask";
     private GameController _gameController;
+    
     private readonly Dictionary<int, IUserInteractable> _inputRedirects
         = new Dictionary<int, IUserInteractable>();
 
     public void Init()
     {
         _gameController = FindObjectOfType<GameController>();
+        
 
         FillInputRedirects();
       
@@ -39,7 +47,10 @@ public class InputManager : MonoBehaviour
 
     private void FillInputRedirects()
     {
-        _inputRedirects.Add(LayerMask.NameToLayer(ElementsLayerName), _gameController);
+        _inputRedirects.Add(LayerMask.NameToLayer(GameMaskLayerName), _gameController);
+        _inputRedirects.Add(LayerMask.NameToLayer(AnimationMasksLayerName), maskManager);
+        _inputRedirects.Add(LayerMask.NameToLayer(ColorMaskLayerName), colorMaskManager);
+        _inputRedirects.Add(LayerMask.NameToLayer(WeatherMaskLayerName), weatherMaskManager);
     
     }
 

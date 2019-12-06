@@ -47,6 +47,11 @@ public class SupportCanvasController : MonoBehaviour
     {
         loadingPanel.SetActive(false); 
     }
-    
+
+    public void SetAnimalsScene(bool set)
+    {
+        SceneLoader.instance.SetAnimalsButtonWasPressed(set);
+    }
+  
     
 }

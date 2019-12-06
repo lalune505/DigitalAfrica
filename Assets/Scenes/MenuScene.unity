@@ -1712,6 +1712,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1662895561}
+        m_MethodName: SetAnimalsScene
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: animals
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &631050301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2608,7 +2619,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 349746309}
+      - m_Target: {fileID: 1849025718}
         m_MethodName: FadePanel
         m_Mode: 6
         m_Arguments:
@@ -2618,6 +2629,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1662895561}
+        m_MethodName: SetAnimalsScene
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: masks
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1400289727
 MonoBehaviour:
@@ -3021,6 +3043,7 @@ MonoBehaviour:
   masksScenePrefabsSet: {fileID: 11400000, guid: 936ddb43674a4451893a87637206d2fc,
     type: 2}
   sceneReadyToActivate: 0
+  animalsButtonWasPressed: 0
 --- !u!4 &1947420376
 Transform:
   m_ObjectHideFlags: 0
