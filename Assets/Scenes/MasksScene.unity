@@ -526,7 +526,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107179662}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1033,7 +1033,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472462086}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1698,7 +1698,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795096535}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2896,7 +2896,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340351240}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3100,7 +3100,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462135660}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3416,7 +3416,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656606232}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3519,7 +3519,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680892057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3699,7 +3699,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719384702}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4401,6 +4401,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Managers
       objectReference: {fileID: 0}
+    - target: {fileID: 6836870124765650508, guid: c2e9c7749abca4c14a227f642eee72e3,
+        type: 3}
+      propertyPath: weatherMaskManager
+      value: 
+      objectReference: {fileID: 1431456397}
+    - target: {fileID: 6836870124765650508, guid: c2e9c7749abca4c14a227f642eee72e3,
+        type: 3}
+      propertyPath: maskManager
+      value: 
+      objectReference: {fileID: 1000734921}
+    - target: {fileID: 6836870124765650508, guid: c2e9c7749abca4c14a227f642eee72e3,
+        type: 3}
+      propertyPath: colorMaskManager
+      value: 
+      objectReference: {fileID: 336499765}
     - target: {fileID: 2331306910102839819, guid: c2e9c7749abca4c14a227f642eee72e3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4456,20 +4471,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836870124765650508, guid: c2e9c7749abca4c14a227f642eee72e3,
-        type: 3}
-      propertyPath: weatherMaskManager
-      value: 
-      objectReference: {fileID: 1431456397}
-    - target: {fileID: 6836870124765650508, guid: c2e9c7749abca4c14a227f642eee72e3,
-        type: 3}
-      propertyPath: maskManager
-      value: 
-      objectReference: {fileID: 1000734921}
-    - target: {fileID: 6836870124765650508, guid: c2e9c7749abca4c14a227f642eee72e3,
-        type: 3}
-      propertyPath: colorMaskManager
-      value: 
-      objectReference: {fileID: 336499765}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2e9c7749abca4c14a227f642eee72e3, type: 3}
