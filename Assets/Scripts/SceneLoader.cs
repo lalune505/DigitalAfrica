@@ -94,7 +94,8 @@ public class SceneLoader : MonoBehaviour
         }
         else if (scenePath.Equals(AnimalsARScenePath))
         {
-            InstantiatePrefabsSetOnTrackable(FindObjectOfType<TrackableBehaviour>(), scenePrefabsSet);
+            InstantiatePrefabsOnTrackables(FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go =>
+                go.name).ToList(), scenePrefabsSet);
         }
         
         sceneReadyToActivate = false;
@@ -120,22 +121,6 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    private void InstantiatePrefabsSetOnTrackable(TrackableBehaviour trackableBehaviour, ScenePrefabsSet set)
-    {
-        List<GameObject> targetPrefabs = new List<GameObject>();
-        for (int i = 0; i < set.targets.Length; i++)
-        {
-            var go = Instantiate(set.targets[i], trackableBehaviour.gameObject.transform, false);
-            targetPrefabs.Add(go);
-        }
-       
-        TargetPrefabsContainer targetPrefabsContainer = trackableBehaviour.GetComponent<TargetPrefabsContainer>();
-        
-        targetPrefabsContainer.SetTarget(targetPrefabs, 0);
-        
-        TargetContentManager.SetCurrentTarget(targetPrefabsContainer.GetTarget(), targetPrefabsContainer.GetTransitionPrefab());
-    }
-    
     private void InstantiatePrefabsOnTrackables(List<TrackableBehaviour> trackableBehaviours, ScenePrefabsSet set)
     {
         for (int i = 0; i < set.targets.Length; i++)
