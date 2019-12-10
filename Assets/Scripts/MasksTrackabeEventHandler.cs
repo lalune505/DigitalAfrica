@@ -42,6 +42,13 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
         }
         
         _masksCanvasController.EnableTargetPanel(true);
+
+        var audioSources = GetComponentsInChildren <AudioSource>();
+
+        foreach (var audioSource in audioSources)
+        {
+            audioSource.Stop();
+        }
     }
 
     #endregion // PROTECTED_METHODS

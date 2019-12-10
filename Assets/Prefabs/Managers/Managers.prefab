@@ -31,9 +31,97 @@ Transform:
   - {fileID: 3816521478243517358}
   - {fileID: 4985321614073804271}
   - {fileID: 1982644556741504067}
+  - {fileID: 4849120411887806163}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &688819057499090609
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2331306910102839819}
+    m_Modifications:
+    - target: {fileID: 6647861657711345133, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_Name
+      value: MusicMaskManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6fee3b67b108b418a9e00e6ffe650392, type: 3}
+--- !u!4 &4849120411887806163 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5387611486412310626, guid: 6fee3b67b108b418a9e00e6ffe650392,
+    type: 3}
+  m_PrefabInstance: {fileID: 688819057499090609}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1343720911905443580 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1957647761233141837, guid: 6fee3b67b108b418a9e00e6ffe650392,
+    type: 3}
+  m_PrefabInstance: {fileID: 688819057499090609}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e6be660ea16468b93243ad4249ed61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2666773043605432152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203,6 +291,11 @@ PrefabInstance:
       propertyPath: colorMaskManager
       value: 
       objectReference: {fileID: 959681763413873596}
+    - target: {fileID: 8393274255059611569, guid: b01e7bccd711142dd85559acb19ea465,
+        type: 3}
+      propertyPath: musicMaskManager
+      value: 
+      objectReference: {fileID: 1343720911905443580}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e7bccd711142dd85559acb19ea465, type: 3}
 --- !u!4 &7222147653528649022 stripped

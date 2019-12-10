@@ -8,12 +8,14 @@ public class InputManager : MonoBehaviour
     public WeatherMaskManager weatherMaskManager;
     public MaskManager maskManager;
     public ColorMaskManager colorMaskManager;
+    public MusicMaskManager musicMaskManager;
     private Camera _mainCamera;
     private LayerMask _layersToHit;
     private const string GameMaskLayerName = "GameMask";
     private const string AnimationMasksLayerName = "Mask";
     private const string WeatherMaskLayerName = "WeatherMask";
     private const string ColorMaskLayerName = "ColorMask";
+    private const string MusicMaskLayerName = "MusicMask";
     private GameController _gameController;
     
     private readonly Dictionary<int, IUserInteractable> _inputRedirects
@@ -51,6 +53,7 @@ public class InputManager : MonoBehaviour
         _inputRedirects.Add(LayerMask.NameToLayer(AnimationMasksLayerName), maskManager);
         _inputRedirects.Add(LayerMask.NameToLayer(ColorMaskLayerName), colorMaskManager);
         _inputRedirects.Add(LayerMask.NameToLayer(WeatherMaskLayerName), weatherMaskManager);
+        _inputRedirects.Add(LayerMask.NameToLayer(MusicMaskLayerName), musicMaskManager);
     
     }
 

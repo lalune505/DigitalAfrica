@@ -8,11 +8,15 @@ public class TestTrackableEventHandler : MonoBehaviour, ITestTrackableEventHandl
     protected TestTrackableBehaviour mTrackableBehaviour;
     protected TestTrackableBehaviour.Status m_PreviousStatus;
     protected TestTrackableBehaviour.Status m_NewStatus;
+    
+    private GameController _gameController;
+    private Animator _maskAnimator;
 
     #endregion // PROTECTED_MEMBER_VARIABLES
 
     #region UNITY_MONOBEHAVIOUR_METHODS
-
+    
+    
     protected virtual void Start()
     {
         mTrackableBehaviour = GetComponent<TestTrackableBehaviour>();
@@ -80,7 +84,12 @@ public class TestTrackableEventHandler : MonoBehaviour, ITestTrackableEventHandl
             // Enable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = true;
+
+            if (_maskAnimator == null)
+                _maskAnimator = GetComponentInChildren<Animator>();
             
+            _maskAnimator.SetTrigger("Appear");
+
         }
     }
 
@@ -104,6 +113,19 @@ public class TestTrackableEventHandler : MonoBehaviour, ITestTrackableEventHandl
             // Disable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = false;
+            
+            _gameController = GetComponentInChildren<GameController>();
+            if (_gameController != null)
+            {
+                _gameController.StopGame();
+            }
+
+            var audioSources = GetComponentsInChildren <AudioSource>();
+
+            foreach (var audioSource in audioSources)
+            {
+                audioSource.Stop();
+            }
         }
     }
 

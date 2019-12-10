@@ -18,10 +18,6 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
     protected override void OnTrackingFound()
     {
         base.OnTrackingFound();
-        
-        _canvasController.EnablePrefabSwitcherButtons(true);
-        
-        TargetContentManager.ActivateTargetPrefab();
 
         _canvasController.EnableTargetPanel(false);
         
@@ -31,10 +27,6 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
     protected override void OnTrackingLost()
     {
         base.OnTrackingLost();
-        
-        _canvasController.EnablePrefabSwitcherButtons(false);
-        
-        TargetContentManager.UpdateNameTextField("");
         
         SoundManager.instance.PauseAudioSource();
 
