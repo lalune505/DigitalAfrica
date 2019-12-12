@@ -3266,6 +3266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9191181658021792731}
   - component: {fileID: 6581774503770464439}
+  - component: {fileID: 114287152197834320}
   m_Layer: 0
   m_Name: AnimalImageTarget2
   m_TagString: Untagged
@@ -3303,3 +3304,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalName: "\u0410\u0434\u0434\u0430\u043A\u0441"
   animalAudio: {fileID: 8300000, guid: af1a2c2f58b7f4b12a1c5f3660d5888c, type: 3}
+--- !u!114 &114287152197834320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191181658021792730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebc2d9c5aad0492f99f3b9229ec0200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
