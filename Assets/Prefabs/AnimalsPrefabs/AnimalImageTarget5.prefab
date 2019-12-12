@@ -1613,6 +1613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 820611204551166276}
   - component: {fileID: 3046391956519626369}
+  - component: {fileID: 114081066006929550}
   m_Layer: 0
   m_Name: AnimalImageTarget5
   m_TagString: Untagged
@@ -1653,6 +1654,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalName: "\u041B\u0435\u0432"
   animalAudio: {fileID: 8300000, guid: c1305b24a29854bc6bd4d260debcc28a, type: 3}
+--- !u!114 &114081066006929550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820611204551166279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebc2d9c5aad0492f99f3b9229ec0200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1023448093450603414
 GameObject:
   m_ObjectHideFlags: 0

@@ -89,12 +89,12 @@ public class SceneLoader : MonoBehaviour
         
         if (scenePath.Equals(MasksARScenePath))
         {
-           InstantiatePrefabsOnTrackables(FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go =>
+           InstantiateMasksPrefabsOnTrackables(FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go =>
                go.name).ToList(),scenePrefabsSet);
         }
         else if (scenePath.Equals(AnimalsARScenePath))
         {
-            InstantiatePrefabsOnTrackables(FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go =>
+            InstantiateAnimalsPrefabsOnTrackables(FindObjectsOfType<TrackableBehaviour>().ToList().OrderBy(go =>
                 go.name).ToList(), scenePrefabsSet);
         }
         
@@ -121,7 +121,7 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    private void InstantiatePrefabsOnTrackables(List<TrackableBehaviour> trackableBehaviours, ScenePrefabsSet set)
+    private void InstantiateMasksPrefabsOnTrackables(List<TrackableBehaviour> trackableBehaviours, ScenePrefabsSet set)
     {
         for (int i = 0; i < set.targets.Length; i++)
         {
@@ -130,5 +130,14 @@ public class SceneLoader : MonoBehaviour
         }
         FindObjectOfType<InputManager>().Init();
     }
-
+    private void InstantiateAnimalsPrefabsOnTrackables(List<TrackableBehaviour> trackableBehaviours, ScenePrefabsSet set)
+    {
+        for (int i = 0; i < set.targets.Length; i++)
+        {
+            Instantiate(set.targets[i], trackableBehaviours[i].gameObject.transform, false);
+           // trackableBehaviours[i].GetComponent<MasksTrackabeEventHandler>().SetAnimator(set.targets[i].GetComponent<Animator>());
+        }
+       // FindObjectOfType<InputManager>().Init();
+    }
+    
 }
