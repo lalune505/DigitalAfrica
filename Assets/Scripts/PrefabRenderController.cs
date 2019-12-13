@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MaskRenderController : MonoBehaviour
+public class PrefabRenderController : MonoBehaviour
 {
     void Start()
     {
