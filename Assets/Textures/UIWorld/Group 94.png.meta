@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: df0dbdfa75f8bf04a8fb5dc305f3bdc0
+guid: 6596f1d25ac63ba4991bfe8d3a9ecebd
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: WorldListenButton_0
-    21300002: WorldListenButton_1
-    21300004: WorldListenButton_2
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -43,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -107,71 +104,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: WorldListenButton_0
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 237
-        width: 541
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 048dd9360ea073c4083ba77cd696c3dc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WorldListenButton_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 86
-        width: 565
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a158cbca57b1b7d479850824f3398799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WorldListenButton_2
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 0
-        width: 467
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcbda8c6504d86445a89d8a087c15413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b4ec586e1adf58546980ace9796a7518
+    spriteID: ac1e31cb86fd5e6499372778f12f2bda
     vertices: []
     indices: 
     edges: []
