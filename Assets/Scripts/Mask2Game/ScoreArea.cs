@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ScoreArea : MonoBehaviour
 {
+    public ParticleSystem particles;
     private Animator maskAnimator;
     [HideInInspector]
     public bool collided;
@@ -13,6 +14,7 @@ public class ScoreArea : MonoBehaviour
         if (!collided)
         {
             collided = true;
+            particles.Play();
             maskAnimator.SetTrigger("Hit");
         }
     }

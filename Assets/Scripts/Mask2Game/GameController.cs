@@ -26,10 +26,17 @@ public class GameController : MonoBehaviour, IUserInteractable
         
         if (!player.IsHoldingBall())
         {
-            _resetTimer -= Time.deltaTime;
-            if (_resetTimer <= 0f)
+            if (scoreArea.collided)
             {
                 StartNewRound();
+            }
+            else
+            {
+                _resetTimer -= Time.deltaTime;
+                if (_resetTimer <= 0f)
+                {
+                    StartNewRound();
+                }
             }
         }
 

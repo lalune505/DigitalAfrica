@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ConditionsContainer : MonoBehaviour
 {
-    public List<GameObject> conditions;
+    public List<ParticleSystem> conditions;
     
     public void SetRandomConditions()
     {
         foreach (var item in conditions)
         {
-            item.SetActive(false);
+            item.Stop();
         }
-        conditions[Random.Range(0, conditions.Count)].SetActive(true);
+        conditions[Random.Range(0, conditions.Count)].Play();
     }
 }
