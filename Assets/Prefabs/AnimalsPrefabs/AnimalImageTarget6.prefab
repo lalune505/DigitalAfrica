@@ -3931,7 +3931,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9014085382934329872}
   - component: {fileID: 1887663252945197797}
-  m_Layer: 0
+  - component: {fileID: 7973513007603124634}
+  m_Layer: 16
   m_Name: elephant_female_fv_ip_mat4_SHP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3973,6 +3974,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &7973513007603124634
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012393654554667442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 3, z: 0}
 --- !u!1 &9012658583062209246
 GameObject:
   m_ObjectHideFlags: 0

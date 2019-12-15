@@ -4136,9 +4136,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3748383261046728453}
-  - component: {fileID: 3280857380792310585}
   - component: {fileID: 3838292290954132263}
-  m_Layer: 0
+  - component: {fileID: 4530672341425683932}
+  m_Layer: 16
   m_Name: Rhino2_RM_SLP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4161,22 +4161,6 @@ Transform:
   m_Father: {fileID: 3048087222153573506}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!111 &3280857380792310585
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3753246139721807855}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 0}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &3838292290954132263
 Animator:
   serializedVersion: 3
@@ -4196,6 +4180,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &4530672341425683932
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3753246139721807855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &3753262419206776705
 GameObject:
   m_ObjectHideFlags: 0
@@ -5340,7 +5337,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7277719729642183168}
   - component: {fileID: 4273810368968391002}
-  m_Layer: 0
+  - component: {fileID: 2311746619662352580}
+  m_Layer: 16
   m_Name: BB_BabyRhino_RM_MX_BRM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5385,6 +5383,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &2311746619662352580
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7277719729642080224}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &7417459934783047900
 GameObject:
   m_ObjectHideFlags: 0

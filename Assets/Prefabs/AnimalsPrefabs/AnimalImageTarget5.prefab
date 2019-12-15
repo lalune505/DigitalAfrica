@@ -726,7 +726,8 @@ GameObject:
   m_Component:
   - component: {fileID: 683252632095590052}
   - component: {fileID: 8851995971891084053}
-  m_Layer: 0
+  - component: {fileID: 4519113227361032795}
+  m_Layer: 16
   m_Name: BB_Lion_Baby_RM_MX_LP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -768,6 +769,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &4519113227361032795
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679218674582456740}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &679233532175585942
 GameObject:
   m_ObjectHideFlags: 0
@@ -4684,7 +4698,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6385572317332229907}
   - component: {fileID: 4834886918761574487}
-  m_Layer: 0
+  - component: {fileID: 6315974159560487877}
+  m_Layer: 16
   m_Name: lion_sv_rm_HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4726,6 +4741,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &6315974159560487877
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6380418103779752941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.8
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &6450618997189171115
 GameObject:
   m_ObjectHideFlags: 0

@@ -137,7 +137,7 @@ public class SceneLoader : MonoBehaviour
             Instantiate(set.targets[i], trackableBehaviours[i].gameObject.transform, false);
            // trackableBehaviours[i].GetComponent<MasksTrackabeEventHandler>().SetAnimator(set.targets[i].GetComponent<Animator>());
         }
-       // FindObjectOfType<InputManager>().Init();
+        FindObjectOfType<InputManager>().Init();
     }
     
 }
