@@ -2184,7 +2184,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5068151234891456285}
-  - component: {fileID: 8635777752754294272}
   - component: {fileID: 114598305084750874}
   m_Layer: 0
   m_Name: AnimalImageTarget6
@@ -2200,7 +2199,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5068151234891456284}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.16, y: 0.16, z: 0.16}
   m_Children:
@@ -2209,22 +2208,7 @@ Transform:
   - {fileID: 7617237759892467501}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8635777752754294272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5068151234891456284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae6fd612d8b146d78512804c2c181dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animalName: "\u0410\u0444\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439
-    \u0441\u043B\u043E\u043D"
-  animalAudio: {fileID: 8300000, guid: 01426dd949b6044ce8feb637eddd79f5, type: 3}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &114598305084750874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2264,16 +2248,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5215762953675503303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00000054327}
-  m_LocalScale: {x: 1.1287066, y: 0.80526483, z: 0.80526483}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00007947286}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6861093414216666779}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 470, y: 35.761}
-  m_SizeDelta: {x: 823, y: 138}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 823, y: 165}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &5688923645095840428
 CanvasRenderer:
@@ -2349,7 +2333,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3851859545876177031}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7906115587284156474}
+        m_MethodName: PlayAnimalAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5298040017297630497
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,6 +3406,7 @@ GameObject:
   - component: {fileID: 6861093414216666756}
   - component: {fileID: 6861093414216666757}
   - component: {fileID: 6861093414216666778}
+  - component: {fileID: 7906115587284156474}
   m_Layer: 5
   m_Name: MainInfoCanvas
   m_TagString: Untagged
@@ -3499,6 +3495,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7906115587284156474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861093414216666776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c289b6978d7d04cb9aedc6cf57e82bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalClip: {fileID: 8300000, guid: 01426dd949b6044ce8feb637eddd79f5, type: 3}
 --- !u!1 &7173016181800919627
 GameObject:
   m_ObjectHideFlags: 0

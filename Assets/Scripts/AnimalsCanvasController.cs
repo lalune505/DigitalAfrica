@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class AnimalsCanvasController : MonoBehaviour
 {
-    public GameObject animalNameTextGo;
     public GameObject targetPanel;
     public GameObject soundButton;
     public Sprite muteSprite;

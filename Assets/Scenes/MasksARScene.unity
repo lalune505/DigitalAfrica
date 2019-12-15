@@ -1335,6 +1335,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5984908146866624846, guid: 923c56a3831f3428b825864b23cf8f37,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 925
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984908146866624846, guid: 923c56a3831f3428b825864b23cf8f37,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1366
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 923c56a3831f3428b825864b23cf8f37, type: 3}
 --- !u!223 &877601109 stripped
@@ -2318,7 +2328,7 @@ MonoBehaviour:
   mDataSetPath: Vuforia/DigitalAfricaMasks.xml
   mAspectRatio: 1.415677
   mImageTargetType: 0
-  mWidth: 1.0055059
+  mWidth: 1
   mHeight: 1.415677
 --- !u!4 &1644102112
 Transform:

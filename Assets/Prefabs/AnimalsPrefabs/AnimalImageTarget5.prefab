@@ -121,16 +121,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308786457108048295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00000054327}
-  m_LocalScale: {x: 1.1287066, y: 0.80526483, z: 0.80526483}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00007947286}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1377146542480167419}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 470, y: 35.761}
-  m_SizeDelta: {x: 823, y: 138}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 823, y: 165}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &204920972105094604
 CanvasRenderer:
@@ -206,7 +206,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8745874724799496167}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8785307612993984403}
+        m_MethodName: PlayAnimalAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &429888375929968902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,7 +1583,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 820611204551166276}
-  - component: {fileID: 3046391956519626369}
   - component: {fileID: 114081066006929550}
   m_Layer: 0
   m_Name: AnimalImageTarget5
@@ -1588,7 +1598,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820611204551166279}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.16, y: 0.16, z: 0.16}
   m_Children:
@@ -1597,21 +1607,7 @@ Transform:
   - {fileID: 3193762554438563916}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3046391956519626369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820611204551166279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae6fd612d8b146d78512804c2c181dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animalName: "\u041B\u0435\u0432"
-  animalAudio: {fileID: 8300000, guid: c1305b24a29854bc6bd4d260debcc28a, type: 3}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &114081066006929550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1963,6 +1959,7 @@ GameObject:
   - component: {fileID: 1377146542480167396}
   - component: {fileID: 1377146542480167397}
   - component: {fileID: 1377146542480167418}
+  - component: {fileID: 8785307612993984403}
   m_Layer: 5
   m_Name: MainInfoCanvas
   m_TagString: Untagged
@@ -2051,6 +2048,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8785307612993984403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377146542480167416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c289b6978d7d04cb9aedc6cf57e82bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalClip: {fileID: 8300000, guid: c1305b24a29854bc6bd4d260debcc28a, type: 3}
 --- !u!1 &1424521543362242054
 GameObject:
   m_ObjectHideFlags: 0

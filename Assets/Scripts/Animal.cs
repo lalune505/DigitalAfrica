@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour
 {
-   [SerializeField] private string animalName;
-   [SerializeField] private AudioClip animalAudio;
-
-    public string GetAnimalName()
-    {
-        return animalName;
-    }
+    [SerializeField] private AudioClip animalAudio;
 
     public AudioClip GetAnimalAudio()
     {

@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 4684240005341203756}
   - component: {fileID: 4684240005341203757}
   - component: {fileID: 4684240005341203762}
+  - component: {fileID: 4135071742634535785}
   m_Layer: 5
   m_Name: MainInfoCanvas
   m_TagString: Untagged
@@ -469,7 +470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.13}
+  m_AnchoredPosition: {x: 0, y: 0.13000488}
   m_SizeDelta: {x: 950, y: 1300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4684240005341203756
@@ -532,6 +533,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4135071742634535785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4684240005341203760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c289b6978d7d04cb9aedc6cf57e82bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalClip: {fileID: 0}
 --- !u!1 &5422248339823892291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,16 +1296,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6220702165067445615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00000054327}
-  m_LocalScale: {x: 1.1287066, y: 0.80526483, z: 0.80526483}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00007947286}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4684240005341203763}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 470, y: 35.761}
-  m_SizeDelta: {x: 823, y: 138}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 823, y: 165}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &5820162019984361732
 CanvasRenderer:
