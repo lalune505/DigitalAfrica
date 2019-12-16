@@ -788,7 +788,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -50, y: 0}
-  m_SizeDelta: {x: 101, y: 131}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &1171288062383822986
 CanvasRenderer:
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8810c0b7330984910aa030e51e6e4440, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4f20fa335f8f4b4eab698107951a62c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -992,5 +992,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPanel: {fileID: 1171288061564995473}
   soundButton: {fileID: 1171288062383822990}
-  muteSprite: {fileID: 21300000, guid: 95a13f1790ec14751a69e37e2cbb6cbb, type: 3}
-  unMuteSprite: {fileID: 21300000, guid: 8810c0b7330984910aa030e51e6e4440, type: 3}
+  muteSprite: {fileID: 21300002, guid: a4f20fa335f8f4b4eab698107951a62c, type: 3}
+  unMuteSprite: {fileID: 21300000, guid: a4f20fa335f8f4b4eab698107951a62c, type: 3}

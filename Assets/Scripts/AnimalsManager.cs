@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimalsManager : MonoBehaviour, IUserInteractable
 {
-    private string[] triggers = {"Touch1", "Touch2"};
+    private string[] triggers = {"Touch1", "Touch2", "Touch3"};
 
     public void HandleInputOccur(RaycastHit hit)
     {
