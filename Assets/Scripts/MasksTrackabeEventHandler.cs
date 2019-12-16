@@ -23,10 +23,12 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
     {
         base.OnTrackingFound();
 
-        if (_maskAnimator != null)
+        if (_maskAnimator == null)
         {
-            _maskAnimator.SetTrigger("Appear");
+            _maskAnimator = GetComponentInChildren<Animator>();
         }
+        
+        _maskAnimator.SetTrigger("Appear");
         
         _masksCanvasController.EnableTargetPanel(false);
 
