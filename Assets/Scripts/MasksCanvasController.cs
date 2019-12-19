@@ -1,11 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MasksCanvasController : MonoBehaviour
 {
    public GameObject targetPanel;
-   public GameObject textPanel;
+   public Text textPanel;
+
+   private void Awake()
+   {
+      textPanel.gameObject.SetActive(false);
+   }
 
    public void EnableTargetPanel(bool enable)
    {
@@ -14,7 +21,12 @@ public class MasksCanvasController : MonoBehaviour
 
    public void EnableTextPanel(bool enable)
    {
-      textPanel.SetActive(enable);
+      textPanel.gameObject.SetActive(enable);
+   }
+
+   public void UpdateTextPanel(string text)
+   {
+      textPanel.text = text;
    }
    
    

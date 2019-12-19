@@ -88,7 +88,8 @@ public class InputManager : MonoBehaviour
             if (Physics.Raycast(ray, out var hit, Mathf.Infinity, _layersToHit))
             {
                 RedirectInputOccur(hit);
-                masksCanvasController.EnableTargetPanel(false);
+                if (masksCanvasController != null)
+                    masksCanvasController.EnableTextPanel(false);
             }
         }
     }
