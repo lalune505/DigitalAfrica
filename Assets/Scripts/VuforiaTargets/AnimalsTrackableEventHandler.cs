@@ -7,6 +7,7 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
 {
     private AnimalsCanvasController _canvasController;
     private AnimalsCanvasController _animalsCanvasController;
+    private bool _detected;
     private void Awake()
     {
         _canvasController = FindObjectOfType<AnimalsCanvasController>();
@@ -19,14 +20,21 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
     {
         base.OnTrackingFound();
 
-        _canvasController.EnableTargetPanel(false);
-        
-       _animalsCanvasController.EnableButton(true);
+        if (!_detected)
+        {
+            _canvasController.EnableTargetPanel(false);
 
+            _animalsCanvasController.EnableButton(true);
+        }
+
+        _detected = true;
+        
     }
     protected override void OnTrackingLost()
     {
         base.OnTrackingLost();
+
+        _detected = false;
         
         SoundManager.instance.PauseAudioSource();
 

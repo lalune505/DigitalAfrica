@@ -7,14 +7,10 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
     private MasksCanvasController _masksCanvasController;
     private Animator _maskAnimator;
     private GameController _gameController;
+    private bool _detected;
     private void Awake()
     {
         _masksCanvasController = FindObjectOfType<MasksCanvasController>();
-    }
-
-    public void SetAnimator(Animator animator)
-    {
-        _maskAnimator = animator;
     }
 
     #region PROTECTED_METHODS
@@ -23,21 +19,33 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
     {
         base.OnTrackingFound();
 
-        if (_maskAnimator == null)
+        if (!_detected)
         {
-            _maskAnimator = GetComponentInChildren<Animator>();
+
+            if (_maskAnimator == null)
+            {
+                _maskAnimator = GetComponentInChildren<Animator>();
+            }
+
+            _maskAnimator.SetTrigger("Appear");
+
+            _masksCanvasController.EnableTargetPanel(false);
+            
+            _masksCanvasController.EnableTextPanel(true);
         }
-        
-        _maskAnimator.SetTrigger("Appear");
-        
-        _masksCanvasController.EnableTargetPanel(false);
+
+        _detected = true;
+
 
     }
     protected override void OnTrackingLost()
     {
         base.OnTrackingLost();
 
+        _detected = false;
+
         _gameController = GetComponentInChildren<GameController>();
+        
         if (_gameController != null)
         {
             _gameController.StopGame();
@@ -49,8 +57,10 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
 
         foreach (var audioSource in audioSources)
         {
-            audioSource.Stop();
+            audioSource.mute = true;
         }
+        
+        _masksCanvasController.EnableTextPanel(false);
     }
 
     #endregion // PROTECTED_METHODS

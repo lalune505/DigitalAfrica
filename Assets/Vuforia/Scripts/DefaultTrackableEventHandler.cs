@@ -65,7 +65,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         {
             OnTrackingFound();
         }
-        else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
+        else if ((previousStatus == TrackableBehaviour.Status.TRACKED || previousStatus == TrackableBehaviour.Status.EXTENDED_TRACKED) &&
                  newStatus == TrackableBehaviour.Status.NO_POSE)
         {
             OnTrackingLost();

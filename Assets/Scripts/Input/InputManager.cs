@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
+    public MasksCanvasController masksCanvasController;
     public WeatherMaskManager weatherMaskManager;
     public MaskManager maskManager;
     public ColorMaskManager colorMaskManager;
@@ -87,6 +88,7 @@ public class InputManager : MonoBehaviour
             if (Physics.Raycast(ray, out var hit, Mathf.Infinity, _layersToHit))
             {
                 RedirectInputOccur(hit);
+                masksCanvasController.EnableTargetPanel(false);
             }
         }
     }
