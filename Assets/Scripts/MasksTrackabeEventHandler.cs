@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
 {
+    public string maskText;
     private MasksCanvasController _masksCanvasController;
     private Animator _maskAnimator;
     private GameController _gameController;
@@ -32,6 +33,15 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
             _masksCanvasController.EnableTargetPanel(false);
             
             _masksCanvasController.EnableTextPanel(true);
+            
+            _masksCanvasController.UpdateTextPanel(maskText);
+        }
+        
+        var audioSources = GetComponentsInChildren <AudioSource>();
+
+        foreach (var audioSource in audioSources)
+        {
+            audioSource.mute = false;
         }
 
         _detected = true;
