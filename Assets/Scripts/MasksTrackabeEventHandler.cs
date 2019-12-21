@@ -8,7 +8,7 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
     private MasksCanvasController _masksCanvasController;
     private Animator _maskAnimator;
     private GameController _gameController;
-    private bool _detected;
+    private bool _detected = false;
     private void Awake()
     {
         _masksCanvasController = FindObjectOfType<MasksCanvasController>();
@@ -19,10 +19,10 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
     protected override void OnTrackingFound()
     {
         base.OnTrackingFound();
-
+        
+        
         if (!_detected)
         {
-
             if (_maskAnimator == null)
             {
                 _maskAnimator = GetComponentInChildren<Animator>();
@@ -51,7 +51,7 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
     protected override void OnTrackingLost()
     {
         base.OnTrackingLost();
-
+        
         _detected = false;
 
         _gameController = GetComponentInChildren<GameController>();
@@ -60,8 +60,6 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
         {
             _gameController.StopGame();
         }
-        
-        _masksCanvasController.EnableTargetPanel(true);
 
         var audioSources = GetComponentsInChildren <AudioSource>();
 
@@ -69,8 +67,7 @@ public class MasksTrackabeEventHandler: DefaultTrackableEventHandler
         {
             audioSource.mute = true;
         }
-        
-        _masksCanvasController.EnableTextPanel(false);
+        // _masksCanvasController.EnableTextPanel(false);
     }
 
     #endregion // PROTECTED_METHODS
