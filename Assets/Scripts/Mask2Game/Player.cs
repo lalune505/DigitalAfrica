@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     private Camera  _camera;
     
     private float _ballDistanceZ = 0.75f;
-    private float _ballDistanceY = -0.15f;
+    private float _ballDistanceY = -0.3f;
     private float _throwForce = 300f;
 
     private bool _holding;

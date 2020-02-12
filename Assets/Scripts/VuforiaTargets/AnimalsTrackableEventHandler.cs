@@ -38,7 +38,7 @@ public class AnimalsTrackableEventHandler : DefaultTrackableEventHandler
         
         SoundManager.instance.PauseAudioSource();
 
-        _canvasController.EnableTargetPanel(true);
+       // _canvasController.EnableTargetPanel(true);
         
         _animalsCanvasController.EnableButton(false);
     }

@@ -52,6 +52,4 @@ public class SupportCanvasController : MonoBehaviour
     {
         SceneLoader.instance.SetAnimalsButtonWasPressed(set);
     }
-  
-    
 }
